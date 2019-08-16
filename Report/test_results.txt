@@ -1,0 +1,50 @@
+openSourcePriceIndex.PriceIndexTest
+  √ ValidateAddingBeyondMaxPriceReportingAgents (749ms)
+  √ ValidateAddingDuplicatePriceReportingAgent (711ms)
+  √ ValidateAddingNewPriceReportingAgent (154ms)
+  √ ValidateAddingPriceAgentSecurity (710ms)
+  √ ValidateAddingReportingAgentInFreeSlot (118ms)
+  √ ValidateConnectingDuplicateFund (836ms)
+  √ ValidateConnectingFund_decimalMismatch (790ms)
+  √ ValidateConnectingFundInEmptySlot (173ms)
+  √ ValidateConnectingFundNoMax (153ms)
+  √ ValidateConnectingFundSecurity (702ms)
+  √ ValidateConnectingNullFund (830ms)
+  √ ValidateDeployment (185ms)
+  √ ValidateDoublingEventPostConnection (123ms)
+  √ ValidateDoublingEventUponConnection (153ms)
+  √ ValidateEndAndReturn (175ms)
+  √ ValidateGetInvalidReportingAgent (84ms)
+  √ ValidatehasFundEnded_notAFund (636ms)
+  √ ValidatePriceAveragingNoFund (145ms)
+  √ ValidatePriceRegistrationSecurity (870ms)
+  √ ValidatePriceRegistrationUpdateEndFromInitNoFund (24ms)
+  √ ValidatePriceRegistrationUpdateFromInitNoFund (155ms)
+  √ ValidateRemovingAllValidReportingAgents_deleteAdmin (982ms)
+  √ ValidateRemovingAllValidReportingAgents_unitializedAgent (980ms)
+  √ ValidateRemovingNewReportingAgent (118ms)
+  √ ValidateRemovingPriceAgentSecurity (870ms)
+  √ ValidateRequestForInvalidFund (143ms)
+  √ ValidateResetFund_notConnectedFund (28ms)
+
+27 passed (12s)
+
+
+--------
+Coverage
+---------------------------------------------------------------------
+File           | Lines |        | Branches |     | Functions |      | 
+---------------------------------------------------------------------
+PriceIndex.sol | 75/79 | 94.94% |    36/40 | 90% |     15/15 | 100% | 
+---------------------------------------------------------------------
+All files      | 75/79 | 94.94% |    36/40 | 90% |     15/15 | 100% | 
+---------------------------------------------------------------------
+
+
+--------
+Source File Hashes
+-----------------------------------------------------------------------------------
+File             Fingerprint (SHA256)                                               
+-----------------------------------------------------------------------------------
+PriceIndex.sol   7B57A89AADCBE43C2DD9DC50F0132C93EF3B5D63590D52ECB1582F38A1D47E23   
+-----------------------------------------------------------------------------------

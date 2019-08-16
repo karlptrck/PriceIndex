@@ -1,0 +1,1263 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PriceIndex.sol - EthNet Coverage</title>
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin: 15px;
+        }
+
+        hr {
+            margin: 15px 0px;
+            background-color: transparent;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        a {
+            color: #2A5DB0;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: black;
+            }
+
+            a:visited {
+                color: #2A5DB0;
+            }
+
+        footer {
+            line-height: 1.5;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    
+
+
+<style>
+
+    .coverage-table {
+        border-collapse: collapse;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 12px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        tab-size: 4;
+    }
+
+    .row-line-number {
+        width: 10px;
+        text-align: right;
+    }
+
+        .row-line-number > span {
+            padding-right: 3px;
+            color: rgba(0, 0, 0, 0.50);
+        }
+
+    .row-execution-count {
+        width: 10px;
+        text-align: right;
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+
+        .row-execution-count > span {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    .row-branches {
+        min-width: 25px;
+    }
+
+        .row-branches > span {
+            border-radius: 4px;
+            padding: 0px 3px;
+            text-align: center;
+            width: 12px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    .branch-state-covered {
+        color: rgb(5, 224, 0);
+    }
+
+    .branch-state-partial {
+        background-color: rgba(0, 0, 0, 0.65);
+        color: #ffed00;
+    }
+
+    .branch-state-uncovered {
+        background-color: rgba(0, 0, 0, 0.80);
+        color: rgb(255, 109, 109);
+        font-weight: bold;
+    }
+
+    .row-source {
+        width: 100%;
+    }
+
+        .row-source span {
+            white-space: pre;
+        }
+
+    .good-execution-count {
+        padding: 0px 3px;
+        background-color: rgba(23, 255, 0, 0.12);
+    }
+
+    .line-uncovered {
+        background-color: rgba(255, 0, 0, 0.10);
+    }
+
+    .line-covered {
+    }
+
+    .line-unreachable {
+        background-color: rgba(254, 255, 0, 0.30)
+    }
+
+    .line-active {
+        background-color: rgba(0, 102, 255, 0.15);
+    }
+</style>
+
+
+<p>
+    <a href="../index.html">index</a> / PriceIndex.sol
+</p>
+<hr />
+
+<div>
+    
+
+<style>
+    .cov-total-percent {
+    }
+
+    .cov-total-desc {
+    }
+
+    .cov-total-counts {
+        margin-right: 30px;
+    }
+</style>
+
+<div>
+
+    <span class="cov-total-percent">94.94%</span>
+    <span class="cov-total-desc">Lines</span>
+    <span class="cov-total-counts">75/79</span>
+
+    <span class="cov-total-percent">90%</span>
+    <span class="cov-total-desc">Branches</span>
+    <span class="cov-total-counts">36/40</span>
+
+    <span class="cov-total-percent">100%</span>
+    <span class="cov-total-desc">Functions</span>
+    <span class="cov-total-counts">15/15</span>
+
+</div>
+</div>
+
+<hr />
+
+<table class="coverage-table">
+    <tbody>
+        <tr>
+            <td rowspan="0" class="row-line-number">
+                    <span>1</span><br />
+                    <span>2</span><br />
+                    <span>3</span><br />
+                    <span>4</span><br />
+                    <span>5</span><br />
+                    <span>6</span><br />
+                    <span>7</span><br />
+                    <span>8</span><br />
+                    <span>9</span><br />
+                    <span>10</span><br />
+                    <span>11</span><br />
+                    <span>12</span><br />
+                    <span>13</span><br />
+                    <span>14</span><br />
+                    <span>15</span><br />
+                    <span>16</span><br />
+                    <span>17</span><br />
+                    <span>18</span><br />
+                    <span>19</span><br />
+                    <span>20</span><br />
+                    <span>21</span><br />
+                    <span>22</span><br />
+                    <span>23</span><br />
+                    <span>24</span><br />
+                    <span>25</span><br />
+                    <span>26</span><br />
+                    <span>27</span><br />
+                    <span>28</span><br />
+                    <span>29</span><br />
+                    <span>30</span><br />
+                    <span>31</span><br />
+                    <span>32</span><br />
+                    <span>33</span><br />
+                    <span>34</span><br />
+                    <span>35</span><br />
+                    <span>36</span><br />
+                    <span>37</span><br />
+                    <span>38</span><br />
+                    <span>39</span><br />
+                    <span>40</span><br />
+                    <span>41</span><br />
+                    <span>42</span><br />
+                    <span>43</span><br />
+                    <span>44</span><br />
+                    <span>45</span><br />
+                    <span>46</span><br />
+                    <span>47</span><br />
+                    <span>48</span><br />
+                    <span>49</span><br />
+                    <span>50</span><br />
+                    <span>51</span><br />
+                    <span>52</span><br />
+                    <span>53</span><br />
+                    <span>54</span><br />
+                    <span>55</span><br />
+                    <span>56</span><br />
+                    <span>57</span><br />
+                    <span>58</span><br />
+                    <span>59</span><br />
+                    <span>60</span><br />
+                    <span>61</span><br />
+                    <span>62</span><br />
+                    <span>63</span><br />
+                    <span>64</span><br />
+                    <span>65</span><br />
+                    <span>66</span><br />
+                    <span>67</span><br />
+                    <span>68</span><br />
+                    <span>69</span><br />
+                    <span>70</span><br />
+                    <span>71</span><br />
+                    <span>72</span><br />
+                    <span>73</span><br />
+                    <span>74</span><br />
+                    <span>75</span><br />
+                    <span>76</span><br />
+                    <span>77</span><br />
+                    <span>78</span><br />
+                    <span>79</span><br />
+                    <span>80</span><br />
+                    <span>81</span><br />
+                    <span>82</span><br />
+                    <span>83</span><br />
+                    <span>84</span><br />
+                    <span>85</span><br />
+                    <span>86</span><br />
+                    <span>87</span><br />
+                    <span>88</span><br />
+                    <span>89</span><br />
+                    <span>90</span><br />
+                    <span>91</span><br />
+                    <span>92</span><br />
+                    <span>93</span><br />
+                    <span>94</span><br />
+                    <span>95</span><br />
+                    <span>96</span><br />
+                    <span>97</span><br />
+                    <span>98</span><br />
+                    <span>99</span><br />
+                    <span>100</span><br />
+                    <span>101</span><br />
+                    <span>102</span><br />
+                    <span>103</span><br />
+                    <span>104</span><br />
+                    <span>105</span><br />
+                    <span>106</span><br />
+                    <span>107</span><br />
+                    <span>108</span><br />
+                    <span>109</span><br />
+                    <span>110</span><br />
+                    <span>111</span><br />
+                    <span>112</span><br />
+                    <span>113</span><br />
+                    <span>114</span><br />
+                    <span>115</span><br />
+                    <span>116</span><br />
+                    <span>117</span><br />
+                    <span>118</span><br />
+                    <span>119</span><br />
+                    <span>120</span><br />
+                    <span>121</span><br />
+                    <span>122</span><br />
+                    <span>123</span><br />
+                    <span>124</span><br />
+                    <span>125</span><br />
+                    <span>126</span><br />
+                    <span>127</span><br />
+                    <span>128</span><br />
+                    <span>129</span><br />
+                    <span>130</span><br />
+                    <span>131</span><br />
+                    <span>132</span><br />
+                    <span>133</span><br />
+                    <span>134</span><br />
+                    <span>135</span><br />
+                    <span>136</span><br />
+                    <span>137</span><br />
+                    <span>138</span><br />
+                    <span>139</span><br />
+                    <span>140</span><br />
+                    <span>141</span><br />
+                    <span>142</span><br />
+                    <span>143</span><br />
+                    <span>144</span><br />
+                    <span>145</span><br />
+                    <span>146</span><br />
+                    <span>147</span><br />
+                    <span>148</span><br />
+                    <span>149</span><br />
+                    <span>150</span><br />
+                    <span>151</span><br />
+                    <span>152</span><br />
+                    <span>153</span><br />
+                    <span>154</span><br />
+                    <span>155</span><br />
+                    <span>156</span><br />
+                    <span>157</span><br />
+                    <span>158</span><br />
+                    <span>159</span><br />
+                    <span>160</span><br />
+                    <span>161</span><br />
+                    <span>162</span><br />
+                    <span>163</span><br />
+                    <span>164</span><br />
+                    <span>165</span><br />
+                    <span>166</span><br />
+                    <span>167</span><br />
+                    <span>168</span><br />
+                    <span>169</span><br />
+                    <span>170</span><br />
+                    <span>171</span><br />
+                    <span>172</span><br />
+                    <span>173</span><br />
+                    <span>174</span><br />
+                    <span>175</span><br />
+                    <span>176</span><br />
+                    <span>177</span><br />
+                    <span>178</span><br />
+                    <span>179</span><br />
+                    <span>180</span><br />
+                    <span>181</span><br />
+                    <span>182</span><br />
+                    <span>183</span><br />
+                    <span>184</span><br />
+                    <span>185</span><br />
+                    <span>186</span><br />
+                    <span>187</span><br />
+                    <span>188</span><br />
+                    <span>189</span><br />
+                    <span>190</span><br />
+                    <span>191</span><br />
+                    <span>192</span><br />
+                    <span>193</span><br />
+                    <span>194</span><br />
+                    <span>195</span><br />
+                    <span>196</span><br />
+                    <span>197</span><br />
+                    <span>198</span><br />
+                    <span>199</span><br />
+                    <span>200</span><br />
+                    <span>201</span><br />
+                    <span>202</span><br />
+                    <span>203</span><br />
+                    <span>204</span><br />
+                    <span>205</span><br />
+                    <span>206</span><br />
+                    <span>207</span><br />
+                    <span>208</span><br />
+                    <span>209</span><br />
+                    <span>210</span><br />
+                    <span>211</span><br />
+                    <span>212</span><br />
+                    <span>213</span><br />
+                    <span>214</span><br />
+                    <span>215</span><br />
+                    <span>216</span><br />
+                    <span>217</span><br />
+                    <span>218</span><br />
+                    <span>219</span><br />
+                    <span>220</span><br />
+                    <span>221</span><br />
+                    <span>222</span><br />
+                    <span>223</span><br />
+                    <span>224</span><br />
+                    <span>225</span><br />
+                    <span>226</span><br />
+                    <span>227</span><br />
+                    <span>228</span><br />
+                    <span>229</span><br />
+                    <span>230</span><br />
+                    <span>231</span><br />
+                    <span>232</span><br />
+                    <span>233</span><br />
+                    <span>234</span><br />
+                    <span>235</span><br />
+                    <span>236</span><br />
+                    <span>237</span><br />
+                    <span>238</span><br />
+                    <span>239</span><br />
+                    <span>240</span><br />
+                    <span>241</span><br />
+                    <span>242</span><br />
+                    <span>243</span><br />
+                    <span>244</span><br />
+                    <span>245</span><br />
+                    <span>246</span><br />
+                    <span>247</span><br />
+                    <span>248</span><br />
+                    <span>249</span><br />
+                    <span>250</span><br />
+                    <span>251</span><br />
+                    <span>252</span><br />
+                    <span>253</span><br />
+                    <span>254</span><br />
+                    <span>255</span><br />
+                    <span>256</span><br />
+                    <span>257</span><br />
+                    <span>258</span><br />
+                    <span>259</span><br />
+                    <span>260</span><br />
+                    <span>261</span><br />
+            </td>
+            <td rowspan="0" class="row-execution-count">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">12&#xD7;</span>
+                        <span class="good-execution-count">11&#xD7;</span>
+                        <span class="good-execution-count">10&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">9&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">9&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">9&#xD7;</span>
+                        <span class="good-execution-count">9&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">9&#xD7;</span>
+                        <br />
+                        <br />
+                        <span class="good-execution-count">9&#xD7;</span>
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">4&#xD7;</span>
+                        <span class="good-execution-count">2&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">2&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">6&#xD7;</span>
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">5&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">19&#xD7;</span>
+                        <br />
+                        <br />
+                        <span class="good-execution-count">19&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">9&#xD7;</span>
+                        <span class="good-execution-count">8&#xD7;</span>
+                        <span class="good-execution-count">8&#xD7;</span>
+                        <span class="good-execution-count">8&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">11&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">11&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">3&#xD7;</span>
+                        <span class="good-execution-count">3&#xD7;</span>
+                        <span class="good-execution-count">3&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">11&#xD7;</span>
+                        <span class="good-execution-count">10&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">12&#xD7;</span>
+                        <span class="good-execution-count">12&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">12&#xD7;</span>
+                        <span class="good-execution-count">20&#xD7;</span>
+                        <span class="good-execution-count">13&#xD7;</span>
+                        <span class="good-execution-count">13&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">12&#xD7;</span>
+                        <span class="good-execution-count">2&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">10&#xD7;</span>
+                        <br />
+                        <br />
+                        <span class="good-execution-count">10&#xD7;</span>
+                        <span class="good-execution-count">10&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">8&#xD7;</span>
+                        <span class="good-execution-count">3&#xD7;</span>
+                        <span class="good-execution-count">2&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">42&#xD7;</span>
+                        <span class="good-execution-count">41&#xD7;</span>
+                        <span class="good-execution-count">40&#xD7;</span>
+                        <span class="good-execution-count">40&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">40&#xD7;</span>
+                        <span class="good-execution-count">18&#xD7;</span>
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">40&#xD7;</span>
+                        <span class="good-execution-count">39&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">40&#xD7;</span>
+                        <span class="good-execution-count">40&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">4&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">4&#xD7;</span>
+                        <br />
+                        <span class="good-execution-count">4&#xD7;</span>
+                        <span class="good-execution-count">8&#xD7;</span>
+                        <span class="good-execution-count">4&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">4&#xD7;</span>
+                        <span class="good-execution-count">2&#xD7;</span>
+                        <span class="good-execution-count">2&#xD7;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+            </td>
+            <td rowspan="0" class="row-branches">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-partial">I</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-partial">E</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-partial">E</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-partial">I</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="branch-state-covered">&#x2713;</span>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+            </td>
+            <td rowspan="0" class="row-source">
+                    <span class="">pragma solidity ^0.4.24;</span><br />
+                    <span class="">import &quot;./SafeMath.sol&quot;; //openzeppelin</span><br />
+                    <span class="">import &quot;./Ownable.sol&quot;; //openzeppelin</span><br />
+                    <span class="">import &quot;./Fund.sol&quot;;</span><br />
+                    <span class=""></span><br />
+                    <span class="">/// @title Novera Price Index</span><br />
+                    <span class="">/// @author Jose Miguel Herrera</span><br />
+                    <span class="">/// @notice You can use this contract to create a price oracle for a financial asset. Prices come from N registered price agents and averaged.</span><br />
+                    <span class="">/// @notice You can use this contract independently, or connected to a &quot;fund&quot; which reads the price and has an end price, at which the fund ends.</span><br />
+                    <span class="">/// @dev With mythX static analysis, you get warning SWC-128 (DoS With Block Gas Limit) due to the looping over connectedFundAddresses in reportPrice(). Since adding new funds is not a user facing function, there is no DoS threat...</span><br />
+                    <span class="">/// @dev ... However, this means that there IS an upper ceiling on how many funds can be connected to one price index.</span><br />
+                    <span class=""></span><br />
+                    <span class="">contract PriceIndex is Ownable {    </span><br />
+                    <span class="">   mapping (address =&gt; FundInfo) public funds;</span><br />
+                    <span class="">   address[] internal connectedFundAddresses;</span><br />
+                    <span class="">   mapping (address =&gt; bool) internal isConnectedFund;</span><br />
+                    <span class="">   uint256 public numberOfConnectedFunds;</span><br />
+                    <span class=""></span><br />
+                    <span class="">   using SafeMath for uint;</span><br />
+                    <span class=""></span><br />
+                    <span class="">   uint256 public masterPrice;</span><br />
+                    <span class="">   address[] internal registeredPriceAgents;</span><br />
+                    <span class="">   uint256 public numberOfRegisteredPriceAgents;</span><br />
+                    <span class="">   uint256 public maxNumberPriceAgents;</span><br />
+                    <span class="">   uint8 public decimals;</span><br />
+                    <span class=""></span><br />
+                    <span class="">   mapping (address =&gt; bool) internal isRegisteredPriceAgent;</span><br />
+                    <span class="">   mapping (address =&gt; priceReport) public PriceAgentReports;</span><br />
+                    <span class=""></span><br />
+                    <span class="">   event LogPriceUpdate(uint256 _newPrice, uint256 timestamp);</span><br />
+                    <span class="">   event changeInPriceAgents(uint _newNumberOfPriceAgents,address changer);</span><br />
+                    <span class="">   event fundEndAlert(uint256 timestamp, uint256 endPrice, address fundAddress);</span><br />
+                    <span class="">   </span><br />
+                    <span class="">    /// @notice Creates a PriceIndex instance.</span><br />
+                    <span class="">    /// @dev In the future, both the asset name and the currency used to track it will be included as parameters.</span><br />
+                    <span class="">    /// @param initialPrice The initial price of the asset.</span><br />
+                    <span class="">    /// @param initialPriceSource Where initialPrice is coming from.</span><br />
+                    <span class="">    /// @param _maxNumberPriceAgents The max nnumber of price agents this price index will allow.</span><br />
+                    <span class="">    /// @param _decimals The decimal precision used to represent the price of the asset. </span><br />
+                    <span class="">    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint8 _decimals) public {</span><br />
+                    <span class="line-covered">       numberOfRegisteredPriceAgents=0;</span><br />
+                    <span class="line-covered">       maxNumberPriceAgents=_maxNumberPriceAgents;</span><br />
+                    <span class="line-covered">       registerPriceAgent(msg.sender);</span><br />
+                    <span class="line-covered">       PriceAgentReports[msg.sender]=priceReport(initialPrice,now,initialPriceSource);</span><br />
+                    <span class="line-covered">       masterPrice=initialPrice;</span><br />
+                    <span class="line-covered">       numberOfConnectedFunds=0;</span><br />
+                    <span class="line-covered">       decimals=_decimals;</span><br />
+                    <span class="line-covered">       emit LogPriceUpdate(masterPrice,now);</span><br />
+                    <span class="">    }</span><br />
+                    <span class="">    </span><br />
+                    <span class="">    /// @notice Connects a Fund to this price index - the fund starts tracking it.</span><br />
+                    <span class="">    /// @notice Only callable by the contract owner.</span><br />
+                    <span class="">    /// @dev Right now there&#x27;s no way to disconnect a fund, this feature could be added in the future.</span><br />
+                    <span class="">    /// @param fundAddress The address of the fund being created.</span><br />
+                    <span class="">    function connectFund(address fundAddress) public onlyOwner {</span><br />
+                    <span class="line-covered">        require(fundAddress!=0);</span><br />
+                    <span class="line-covered">        require(!isConnectedFund[fundAddress]);</span><br />
+                    <span class="line-covered">        require(Fund(fundAddress).decimals()==decimals);</span><br />
+                    <span class=""></span><br />
+                    <span class="line-covered">        isConnectedFund[fundAddress]=true;</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        connectedFundAddresses.push(fundAddress);</span><br />
+                    <span class=""></span><br />
+                    <span class="line-covered">        funds[fundAddress]=FundInfo(Fund(fundAddress),false,0,0);</span><br />
+                    <span class="line-covered">        funds[fundAddress].strikePrice=funds[fundAddress].fund.strikePrice();</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        numberOfConnectedFunds=numberOfConnectedFunds.add(1);</span><br />
+                    <span class="">        </span><br />
+                    <span class="">        //what if new connected fund here has reached max conditions already??</span><br />
+                    <span class="line-covered">        if(reachedMaxConditions(fundAddress)){</span><br />
+                    <span class="line-covered">            handleMaxConditionForFund(fundAddress);</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">        </span><br />
+                    <span class="">    }</span><br />
+                    <span class="">    </span><br />
+                    <span class="">    /// @notice Retrieves the address of one of the connected funds.</span><br />
+                    <span class="">    /// @param index The index of the Ith connected fund.</span><br />
+                    <span class="">    /// @return The address of the Ith connected fund.</span><br />
+                    <span class="">    function getConnectedFundAddress(uint index) view public returns(address) {</span><br />
+                    <span class="line-covered">        if(numberOfConnectedFunds==0 || index&gt;connectedFundAddresses.length.sub(1)){</span><br />
+                    <span class="line-covered">            return 0;</span><br />
+                    <span class="">        }else{</span><br />
+                    <span class="line-covered">            return connectedFundAddresses[index];</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @notice Retrieves the address of one of the registered price agents.</span><br />
+                    <span class="">    /// @param index The index of the Ith registered agent.</span><br />
+                    <span class="">    /// @return The address of the Ith registered agent.</span><br />
+                    <span class="">    function getRegisteredPriceAgent(uint index) view public returns(address) {</span><br />
+                    <span class="line-covered">        if(numberOfRegisteredPriceAgents==0 || index&gt;registeredPriceAgents.length.sub(1)){</span><br />
+                    <span class="line-covered">            return 0;</span><br />
+                    <span class="">        }else{</span><br />
+                    <span class="line-covered">            return registeredPriceAgents[index];</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">    }</span><br />
+                    <span class="">    </span><br />
+                    <span class="">    /// @notice Retrieves the current price of the tracked asset.</span><br />
+                    <span class="">    /// @dev Designed for the use of a Fund contract (external requests), but can be used publically (would be the same as calling masterPrice())</span><br />
+                    <span class="">    /// @return If called by Fund that has reached its end conditions, then returns the price that cuased the fund to end. Otherwise, returns CURRENT the price of the asset.</span><br />
+                    <span class="">    function getPrice() view public returns(uint256){</span><br />
+                    <span class="">        //if I have a fund connected that has reached its end conditions, give it end price</span><br />
+                    <span class="line-covered">        if(isConnectedFund[msg.sender] &amp;&amp; funds[msg.sender].endPriceConditionsReached ){</span><br />
+                    <span class="line-uncovered">            return funds[msg.sender].endPrice;</span><br />
+                    <span class="">        }else{</span><br />
+                    <span class="line-covered">            return masterPrice;</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @notice Updates current price of the tracked asset and handles the ending of funds.</span><br />
+                    <span class="">    /// @param reportedPrice The reported price.</span><br />
+                    <span class="">    /// @param reportedPriceSource Where reportedPrice comes from.</span><br />
+                    <span class="">    /// @dev Currently averages the prices, future improvement to moving averages possible.</span><br />
+                    <span class="">    /// @dev Analysis needs to be done on this function to see how gas usage increases with the growth of more connected fund addresses, as it may reach a point of self-inflicted DoS.</span><br />
+                    <span class="">    /// @dev The above is an argument for having the ability to DISCONNECT funds.</span><br />
+                    <span class="">    function reportPrice(uint256 reportedPrice,string reportedPriceSource ) public {</span><br />
+                    <span class="line-covered">        require(isRegisteredPriceAgent[msg.sender]); //needs to be registered price agent</span><br />
+                    <span class="line-covered">        PriceAgentReports[msg.sender]=priceReport(reportedPrice,now,reportedPriceSource);</span><br />
+                    <span class="line-covered">        aggregatePrice();</span><br />
+                    <span class="line-covered">        checkAndUpdateFunds();</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @dev Internal function used to check if the current price, newly updated, causes the end of a fund.</span><br />
+                    <span class="">    /// @param fundAddress The address of the fund that is being checked.</span><br />
+                    <span class="">    /// @return true if the current price has caused the fund to reach its max/end conditions. False otherwise.</span><br />
+                    <span class="">    function reachedMaxConditions(address fundAddress) internal view returns(bool){</span><br />
+                    <span class="line-covered">        require(isConnectedFund[fundAddress]);</span><br />
+                    <span class="">        //modified so that price index asks a particular fund if it has reached its custom max conditions.</span><br />
+                    <span class="line-covered">        return funds[fundAddress].fund.wouldReachEndConditions(masterPrice);</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @dev Internal function used to handle when a price update causes the end of a fund.</span><br />
+                    <span class="">    /// @param fundAddress The address of the fund that has ended due to a price update</span><br />
+                    <span class="">    function handleMaxConditionForFund(address fundAddress) internal{</span><br />
+                    <span class="line-covered">        emit fundEndAlert(now,masterPrice,fundAddress);</span><br />
+                    <span class="line-covered">        funds[fundAddress].endPriceConditionsReached=true;</span><br />
+                    <span class="line-covered">        funds[fundAddress].endPrice=masterPrice;</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @notice Checks if a connected fund has ended.</span><br />
+                    <span class="">    /// @param fundAddress The address of the fund that is going to be checked.</span><br />
+                    <span class="">    /// @return true if the fund has ended. false otherwise.</span><br />
+                    <span class="">    function hasFundEnded(address fundAddress) public view returns(bool){</span><br />
+                    <span class="line-covered">        require(isConnectedFund[fundAddress]);</span><br />
+                    <span class="line-covered">        return funds[fundAddress].endPriceConditionsReached;</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @notice Retrieves the price that caused a fund to end.</span><br />
+                    <span class="">    /// @param fundAddress The address of the fund that ended.</span><br />
+                    <span class="">    /// @return the price that caused the fund to end.</span><br />
+                    <span class="">    function getEndPrice(address fundAddress) public view returns(uint256){</span><br />
+                    <span class="line-covered">        require(hasFundEnded(fundAddress));</span><br />
+                    <span class="line-covered">        return funds[fundAddress].endPrice;</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @dev Only callable by a Fund contract (external request) that has reached its end conditions/has ended.</span><br />
+                    <span class="">    /// @dev Resets the end status of a fun and retreives the new strike price.</span><br />
+                    <span class="">    function resetFundStatus() public {</span><br />
+                    <span class="line-covered">        require(isConnectedFund[msg.sender] &amp;&amp; funds[msg.sender].endPriceConditionsReached);</span><br />
+                    <span class="line-uncovered">        funds[msg.sender].endPriceConditionsReached=false;</span><br />
+                    <span class="line-uncovered">        funds[msg.sender].endPrice=0;</span><br />
+                    <span class="line-uncovered">        funds[msg.sender].strikePrice=funds[msg.sender].fund.strikePrice();</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @dev Internal function that retrieves all current price reports and averages them, updating the master price.</span><br />
+                    <span class="">    /// @dev This is where moving average functionality could be added instead of simple averaging.</span><br />
+                    <span class="">    /// @dev Warning: does not work if there are no valid (have reported a price) reports/agents. This is enforced in the removal of agents.</span><br />
+                    <span class="">    function aggregatePrice() private {</span><br />
+                    <span class="line-covered">        uint256 aggPrice=0;</span><br />
+                    <span class="line-covered">        uint256 numValidPrices=0;</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        for (uint i=0; i&lt;registeredPriceAgents.length; i=i.add(1)) {</span><br />
+                    <span class="line-covered">            if(registeredPriceAgents[i]!=0 &amp;&amp; PriceAgentReports[registeredPriceAgents[i]].timestamp!=0){</span><br />
+                    <span class="line-covered">                numValidPrices=numValidPrices.add(1);</span><br />
+                    <span class="line-covered">                aggPrice=aggPrice.add(PriceAgentReports[registeredPriceAgents[i]].price);</span><br />
+                    <span class="">            }</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        if(numValidPrices==0){ //THIS SHOULD NEVER HAPPEN, AND IS GUARANTEED BY THE REMOVE PRICE AGENT FUNC, THERE SHALL BE ALWAYS 1 AGENT</span><br />
+                    <span class="line-covered">            revert(&quot;Price cannot be aggregated because there are no valid prices.&quot;);</span><br />
+                    <span class="">        }else{</span><br />
+                    <span class="line-covered">            aggPrice = aggPrice.div(numValidPrices);</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        emit LogPriceUpdate(aggPrice,now);</span><br />
+                    <span class="line-covered">        masterPrice=aggPrice;</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @dev Internal function that checks if the previous price update would end a fund, and triggers the end process </span><br />
+                    <span class="">    function checkAndUpdateFunds() private {</span><br />
+                    <span class="line-covered">        for (uint i=0; i&lt;connectedFundAddresses.length; i=i.add(1)) {</span><br />
+                    <span class="line-covered">            if(isConnectedFund[connectedFundAddresses[i]] &amp;&amp; !hasFundEnded(connectedFundAddresses[i]) &amp;&amp; reachedMaxConditions(connectedFundAddresses[i])){</span><br />
+                    <span class="line-covered">                handleMaxConditionForFund(connectedFundAddresses[i]);</span><br />
+                    <span class="">            }</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    /// @notice Registers an address as a registered price agent for this price index.</span><br />
+                    <span class="">    /// @notice Only callable by the contract owner.</span><br />
+                    <span class="">    /// @param newAgent The address of the price agent to be registered.</span><br />
+                    <span class="">    function registerPriceAgent(address newAgent) public onlyOwner  {</span><br />
+                    <span class="line-covered">        require(!isRegisteredPriceAgent[newAgent]); //prevent double registrations</span><br />
+                    <span class="line-covered">        require(numberOfRegisteredPriceAgents&lt;maxNumberPriceAgents); //no more than max</span><br />
+                    <span class="line-covered">        isRegisteredPriceAgent[newAgent]=true;</span><br />
+                    <span class="line-covered">        bool foundEmptySlot=false;</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        for (uint i=0; i&lt;registeredPriceAgents.length; i=i.add(1)) {</span><br />
+                    <span class="line-covered">            if(registeredPriceAgents[i]==0){</span><br />
+                    <span class="line-covered">               registeredPriceAgents[i]=newAgent; //add agent in first free slot   </span><br />
+                    <span class="line-covered">               foundEmptySlot=true;</span><br />
+                    <span class="line-covered">               break;</span><br />
+                    <span class="">            }</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        if(!foundEmptySlot){</span><br />
+                    <span class="line-covered">            registeredPriceAgents.push(newAgent);</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">        </span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        numberOfRegisteredPriceAgents=numberOfRegisteredPriceAgents.add(1);</span><br />
+                    <span class="line-covered">        emit changeInPriceAgents(numberOfRegisteredPriceAgents,msg.sender);</span><br />
+                    <span class="">    }</span><br />
+                    <span class="">    </span><br />
+                    <span class="">    /// @notice Removes an address as a registered price agent for this price index. Also removes the agent&#x27;s price report, recalculating the master price.</span><br />
+                    <span class="">    /// @notice Only callable by the contract owner.</span><br />
+                    <span class="">    /// @dev Warning: you cannot remove the LAST valid (has reported a price) price reporting agent.</span><br />
+                    <span class="">    /// @param agentToRemove The address of the price agent to be removed.</span><br />
+                    <span class="">    function removePriceAgent(address agentToRemove) public onlyOwner   {</span><br />
+                    <span class="">        //require(agentToRemove!=owner()); //cannot remove contract owner (note: this is something that needs to be further discussed)</span><br />
+                    <span class="">        //require(numberOfRegisteredPriceAgents&gt;1);</span><br />
+                    <span class="">        //above were previous attempts to prevent a bad state when the last valid agent was deleted, but now it&#x27;s being done in aggregatePrice</span><br />
+                    <span class="line-covered">        isRegisteredPriceAgent[agentToRemove]=false;</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        delete PriceAgentReports[agentToRemove];</span><br />
+                    <span class=""></span><br />
+                    <span class="line-covered">        for (uint i=0; i&lt;registeredPriceAgents.length; i=i.add(1)) {</span><br />
+                    <span class="line-covered">            if(registeredPriceAgents[i]==agentToRemove){</span><br />
+                    <span class="line-covered">                delete registeredPriceAgents[i]; //leaves a gap of 0</span><br />
+                    <span class="">            }</span><br />
+                    <span class="">        }</span><br />
+                    <span class="">        </span><br />
+                    <span class="line-covered">        aggregatePrice();</span><br />
+                    <span class="line-covered">        numberOfRegisteredPriceAgents=numberOfRegisteredPriceAgents.sub(1);</span><br />
+                    <span class="line-covered">        emit changeInPriceAgents(numberOfRegisteredPriceAgents,msg.sender);</span><br />
+                    <span class=""></span><br />
+                    <span class="">    }</span><br />
+                    <span class=""></span><br />
+                    <span class="">    struct priceReport {</span><br />
+                    <span class="">        uint256 price;</span><br />
+                    <span class="">        uint256 timestamp;</span><br />
+                    <span class="">        string source;</span><br />
+                    <span class="">    }</span><br />
+                    <span class="">    </span><br />
+                    <span class="">    struct FundInfo{</span><br />
+                    <span class="">        Fund fund;</span><br />
+                    <span class="">        bool endPriceConditionsReached;</span><br />
+                    <span class="">        uint256 endPrice;</span><br />
+                    <span class="">        uint256 strikePrice;</span><br />
+                    <span class="">    }</span><br />
+                    <span class="">    </span><br />
+                    <span class="">}</span><br />
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+    <hr />
+    <footer>
+        <center>
+            Solidity code coverage report generated by Meadow v0.3.225
+            <br />
+            Used Solidity Compiler v0.4.25
+            <br />
+            2019-08-07T22:49:35 (UTC)
+            <br />
+            <a href="https://github.com/MeadowSuite">github.com/MeadowSuite</a>
+        </center>
+    </footer>
+
+
+    
+</body>
+</html>
