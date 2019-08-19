@@ -1,6 +1,6 @@
 ![Novera](./NoveraLogo.png)
 
-# Novera Open Source Price Index
+# Novera Open Source Price Index v0.7
 
 This is the repository for Novera's open source price index. It is an oracle for tracking the price of an asset, and has the following features:
 
@@ -27,7 +27,7 @@ The core functionality of the Price Index can be achieved with the following fun
 
 # Dependencies
 
-Ownable.sol and SafeMath from [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts) are used.
+Ownable.sol and SafeMath.sol from [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts) are used.
 
 
 # License
