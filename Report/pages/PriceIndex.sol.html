@@ -166,9 +166,9 @@
 
 <div>
 
-    <span class="cov-total-percent">94.94%</span>
+    <span class="cov-total-percent">95.06%</span>
     <span class="cov-total-desc">Lines</span>
-    <span class="cov-total-counts">75/79</span>
+    <span class="cov-total-counts">77/81</span>
 
     <span class="cov-total-percent">90%</span>
     <span class="cov-total-desc">Branches</span>
@@ -448,6 +448,17 @@
                     <span>259</span><br />
                     <span>260</span><br />
                     <span>261</span><br />
+                    <span>262</span><br />
+                    <span>263</span><br />
+                    <span>264</span><br />
+                    <span>265</span><br />
+                    <span>266</span><br />
+                    <span>267</span><br />
+                    <span>268</span><br />
+                    <span>269</span><br />
+                    <span>270</span><br />
+                    <span>271</span><br />
+                    <span>272</span><br />
             </td>
             <td rowspan="0" class="row-execution-count">
                         <br />
@@ -490,6 +501,17 @@
                         <br />
                         <br />
                         <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <span class="good-execution-count">28&#xD7;</span>
+                        <span class="good-execution-count">28&#xD7;</span>
                         <span class="good-execution-count">28&#xD7;</span>
                         <span class="good-execution-count">28&#xD7;</span>
                         <span class="good-execution-count">28&#xD7;</span>
@@ -768,6 +790,17 @@
                         <br />
                         <br />
                         <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                         <span class="branch-state-covered">&#x2713;</span>
                         <span class="branch-state-covered">&#x2713;</span>
                         <span class="branch-state-covered">&#x2713;</span>
@@ -976,6 +1009,13 @@
                         <br />
             </td>
             <td rowspan="0" class="row-source">
+                    <span class="">/* </span><br />
+                    <span class="">Copyright 2019 Novera Capital Inc.</span><br />
+                    <span class="">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</span><br />
+                    <span class="">The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</span><br />
+                    <span class="">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span><br />
+                    <span class="">*/</span><br />
+                    <span class=""></span><br />
                     <span class="">pragma solidity ^0.4.24;</span><br />
                     <span class="">import &quot;./SafeMath.sol&quot;; //openzeppelin</span><br />
                     <span class="">import &quot;./Ownable.sol&quot;; //openzeppelin</span><br />
@@ -989,6 +1029,8 @@
                     <span class="">/// @dev ... However, this means that there IS an upper ceiling on how many funds can be connected to one price index.</span><br />
                     <span class=""></span><br />
                     <span class="">contract PriceIndex is Ownable {    </span><br />
+                    <span class="">   string public baseTicker;</span><br />
+                    <span class="">   string public quoteTicker; </span><br />
                     <span class="">   mapping (address =&gt; FundInfo) public funds;</span><br />
                     <span class="">   address[] internal connectedFundAddresses;</span><br />
                     <span class="">   mapping (address =&gt; bool) internal isConnectedFund;</span><br />
@@ -1015,7 +1057,7 @@
                     <span class="">    /// @param initialPriceSource Where initialPrice is coming from.</span><br />
                     <span class="">    /// @param _maxNumberPriceAgents The max nnumber of price agents this price index will allow.</span><br />
                     <span class="">    /// @param _decimals The decimal precision used to represent the price of the asset. </span><br />
-                    <span class="">    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint8 _decimals) public {</span><br />
+                    <span class="">    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint8 _decimals, string _baseTicker, string _quoteTicker) public {</span><br />
                     <span class="line-covered">       numberOfRegisteredPriceAgents=0;</span><br />
                     <span class="line-covered">       maxNumberPriceAgents=_maxNumberPriceAgents;</span><br />
                     <span class="line-covered">       registerPriceAgent(msg.sender);</span><br />
@@ -1023,6 +1065,8 @@
                     <span class="line-covered">       masterPrice=initialPrice;</span><br />
                     <span class="line-covered">       numberOfConnectedFunds=0;</span><br />
                     <span class="line-covered">       decimals=_decimals;</span><br />
+                    <span class="line-covered">       baseTicker=_baseTicker;</span><br />
+                    <span class="line-covered">       quoteTicker=_quoteTicker;</span><br />
                     <span class="line-covered">       emit LogPriceUpdate(masterPrice,now);</span><br />
                     <span class="">    }</span><br />
                     <span class="">    </span><br />
@@ -1251,7 +1295,7 @@
             <br />
             Used Solidity Compiler v0.4.25
             <br />
-            2019-08-07T22:49:35 (UTC)
+            2019-08-20T21:48:30 (UTC)
             <br />
             <a href="https://github.com/MeadowSuite">github.com/MeadowSuite</a>
         </center>

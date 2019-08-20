@@ -1,33 +1,34 @@
 openSourcePriceIndex.PriceIndexTest
-  √ ValidateAddingBeyondMaxPriceReportingAgents (749ms)
-  √ ValidateAddingDuplicatePriceReportingAgent (711ms)
-  √ ValidateAddingNewPriceReportingAgent (154ms)
-  √ ValidateAddingPriceAgentSecurity (710ms)
-  √ ValidateAddingReportingAgentInFreeSlot (118ms)
-  √ ValidateConnectingDuplicateFund (836ms)
-  √ ValidateConnectingFund_decimalMismatch (790ms)
-  √ ValidateConnectingFundInEmptySlot (173ms)
-  √ ValidateConnectingFundNoMax (153ms)
-  √ ValidateConnectingFundSecurity (702ms)
-  √ ValidateConnectingNullFund (830ms)
-  √ ValidateDeployment (185ms)
-  √ ValidateDoublingEventPostConnection (123ms)
-  √ ValidateDoublingEventUponConnection (153ms)
-  √ ValidateEndAndReturn (175ms)
-  √ ValidateGetInvalidReportingAgent (84ms)
-  √ ValidatehasFundEnded_notAFund (636ms)
-  √ ValidatePriceAveragingNoFund (145ms)
-  √ ValidatePriceRegistrationSecurity (870ms)
-  √ ValidatePriceRegistrationUpdateEndFromInitNoFund (24ms)
-  √ ValidatePriceRegistrationUpdateFromInitNoFund (155ms)
-  √ ValidateRemovingAllValidReportingAgents_deleteAdmin (982ms)
-  √ ValidateRemovingAllValidReportingAgents_unitializedAgent (980ms)
-  √ ValidateRemovingNewReportingAgent (118ms)
-  √ ValidateRemovingPriceAgentSecurity (870ms)
-  √ ValidateRequestForInvalidFund (143ms)
-  √ ValidateResetFund_notConnectedFund (28ms)
+  √ ValidateAddingBeyondMaxPriceReportingAgents (559ms)
+  √ ValidateAddingDuplicatePriceReportingAgent (559ms)
+  √ ValidateAddingNewPriceReportingAgent (145ms)
+  √ ValidateAddingPriceAgentSecurity (556ms)
+  √ ValidateAddingReportingAgentInFreeSlot (120ms)
+  √ ValidateConnectingDuplicateFund (568ms)
+  √ ValidateConnectingFund_decimalMismatch (485ms)
+  √ ValidateConnectingFundInEmptySlot (157ms)
+  √ ValidateConnectingFundNoMax (155ms)
+  √ ValidateConnectingFundSecurity (559ms)
+  √ ValidateConnectingNullFund (564ms)
+  ✗ ValidateDeployment (274ms)
+  √ ValidateDoublingEventPostConnection (132ms)
+  √ ValidateDoublingEventUponConnection (155ms)
+  √ ValidateEndAndReturn (154ms)
+  √ ValidateGetInvalidReportingAgent (94ms)
+  √ ValidatehasFundEnded_notAFund (406ms)
+  √ ValidatePriceAveragingNoFund (123ms)
+  √ ValidatePriceRegistrationSecurity (557ms)
+  √ ValidatePriceRegistrationUpdateEndFromInitNoFund (145ms)
+  √ ValidatePriceRegistrationUpdateFromInitNoFund (145ms)
+  √ ValidateRemovingAllValidReportingAgents_deleteAdmin (679ms)
+  √ ValidateRemovingAllValidReportingAgents_unitializedAgent (666ms)
+  √ ValidateRemovingNewReportingAgent (31ms)
+  √ ValidateRemovingPriceAgentSecurity (559ms)
+  √ ValidateRequestForInvalidFund (130ms)
+  √ ValidateResetFund_notConnectedFund (35ms)
 
-27 passed (12s)
+26 passed (8s)
+1 failed (0s)
 
 
 --------
@@ -35,9 +36,9 @@ Coverage
 ---------------------------------------------------------------------
 File           | Lines |        | Branches |     | Functions |      | 
 ---------------------------------------------------------------------
-PriceIndex.sol | 75/79 | 94.94% |    36/40 | 90% |     15/15 | 100% | 
+PriceIndex.sol | 77/81 | 95.06% |    36/40 | 90% |     15/15 | 100% | 
 ---------------------------------------------------------------------
-All files      | 75/79 | 94.94% |    36/40 | 90% |     15/15 | 100% | 
+All files      | 77/81 | 95.06% |    36/40 | 90% |     15/15 | 100% | 
 ---------------------------------------------------------------------
 
 
@@ -46,5 +47,5 @@ Source File Hashes
 -----------------------------------------------------------------------------------
 File             Fingerprint (SHA256)                                               
 -----------------------------------------------------------------------------------
-PriceIndex.sol   7B57A89AADCBE43C2DD9DC50F0132C93EF3B5D63590D52ECB1582F38A1D47E23   
+PriceIndex.sol   E26ADF748E6F98C17F9528E80A3D98ACBC9DB3B167FE3CC41BED79E86176D457   
 -----------------------------------------------------------------------------------

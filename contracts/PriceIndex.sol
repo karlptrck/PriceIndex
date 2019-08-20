@@ -18,6 +18,8 @@ import "./Fund.sol";
 /// @dev ... However, this means that there IS an upper ceiling on how many funds can be connected to one price index.
 
 contract PriceIndex is Ownable {    
+   string public baseTicker;
+   string public quoteTicker; 
    mapping (address => FundInfo) public funds;
    address[] internal connectedFundAddresses;
    mapping (address => bool) internal isConnectedFund;
@@ -44,7 +46,7 @@ contract PriceIndex is Ownable {
     /// @param initialPriceSource Where initialPrice is coming from.
     /// @param _maxNumberPriceAgents The max nnumber of price agents this price index will allow.
     /// @param _decimals The decimal precision used to represent the price of the asset. 
-    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint8 _decimals) public {
+    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint8 _decimals, string _baseTicker, string _quoteTicker) public {
        numberOfRegisteredPriceAgents=0;
        maxNumberPriceAgents=_maxNumberPriceAgents;
        registerPriceAgent(msg.sender);
@@ -52,6 +54,8 @@ contract PriceIndex is Ownable {
        masterPrice=initialPrice;
        numberOfConnectedFunds=0;
        decimals=_decimals;
+       baseTicker=_baseTicker;
+       quoteTicker=_quoteTicker;
        emit LogPriceUpdate(masterPrice,now);
     }
     

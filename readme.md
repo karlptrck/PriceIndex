@@ -1,6 +1,6 @@
 ![Novera](./NoveraLogo.png)
 
-# Novera Open Source Price Index v0.7
+# Novera Open Source Price Index v0.75
 
 This is the repository for Novera's open source price index. It is an oracle for tracking the price of an asset, and has the following features:
 

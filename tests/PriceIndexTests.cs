@@ -35,7 +35,7 @@ namespace openSourcePriceIndex
         protected override async Task BeforeEach()
         {
             // Deploy our test contract
-            _contract = await PriceIndex.New(initPrice,"meadowInit",4,(byte)fiatDecimals,RpcClient);
+            _contract = await PriceIndex.New(initPrice,"meadowInit",4,(byte)fiatDecimals,"BTC", "USD",RpcClient);
         }
 
 
@@ -75,6 +75,14 @@ namespace openSourcePriceIndex
             Assert.AreEqual(true, BtcPriceReport.timestamp>=now-60  && BtcPriceReport.timestamp <= now );
 
             Assert.AreEqual("meadowInit", BtcPriceReport.source);
+
+            //validate tickers
+            var baseTicker = await _contract.baseTicker().Call();
+            Assert.AreEqual("BTC", baseTicker);
+
+            var quoteTicker = await _contract.quoteTicker().Call();
+            Assert.AreEqual("USD", quoteTicker);
+
         }
 
         [TestMethod]
@@ -539,7 +547,7 @@ namespace openSourcePriceIndex
             //make new price index but with other decimals
             // Deploy our test contract
             Meadow.Core.EthTypes.UInt256 fiatDecimals2 = 5;
-            PriceIndex _contract2 = await PriceIndex.New(initPrice,"meadowInit",4,(byte)fiatDecimals2,RpcClient);
+            PriceIndex _contract2 = await PriceIndex.New(initPrice,"meadowInit",4,(byte)fiatDecimals2,"BTC", "USD",RpcClient);
 
             //connect fund 
             var txParams = new TransactionParams { From = Accounts[0] }; // admin
