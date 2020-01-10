@@ -8,7 +8,7 @@
       "SourceFilePath": "PriceIndex.sol",
       "SourceFileName": "PriceIndex.sol",
       "SourceFileDirectory": "",
-      "SourceHashSha256": "E26ADF748E6F98C17F9528E80A3D98ACBC9DB3B167FE3CC41BED79E86176D457",
+      "SourceHashSha256": "95F44978BDB9BB392F249627D9F0B91C056E3CA311DB91E00E56D3F8475B0360",
       "SourceFileLines": [
         {
           "IsActive": false,
@@ -443,14 +443,14 @@
           "IsActive": false,
           "IsUnreachable": false,
           "LineNumber": 34,
-          "LiteralSourceCodeLine": "   uint8 public decimals;",
+          "LiteralSourceCodeLine": "   uint256 public decimals;",
           "ExecutionCount": 0,
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
           "Offset": 2376,
-          "OffsetEnd": 2401,
-          "Length": 25
+          "OffsetEnd": 2403,
+          "Length": 27
         },
         {
           "IsActive": false,
@@ -461,8 +461,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2402,
-          "OffsetEnd": 2402,
+          "Offset": 2404,
+          "OffsetEnd": 2404,
           "Length": 0
         },
         {
@@ -474,8 +474,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2403,
-          "OffsetEnd": 2464,
+          "Offset": 2405,
+          "OffsetEnd": 2466,
           "Length": 61
         },
         {
@@ -487,8 +487,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2465,
-          "OffsetEnd": 2526,
+          "Offset": 2467,
+          "OffsetEnd": 2528,
           "Length": 61
         },
         {
@@ -500,8 +500,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2527,
-          "OffsetEnd": 2527,
+          "Offset": 2529,
+          "OffsetEnd": 2529,
           "Length": 0
         },
         {
@@ -513,8 +513,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2528,
-          "OffsetEnd": 2590,
+          "Offset": 2530,
+          "OffsetEnd": 2592,
           "Length": 62
         },
         {
@@ -526,8 +526,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2591,
-          "OffsetEnd": 2666,
+          "Offset": 2593,
+          "OffsetEnd": 2668,
           "Length": 75
         },
         {
@@ -539,8 +539,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2667,
-          "OffsetEnd": 2747,
+          "Offset": 2669,
+          "OffsetEnd": 2749,
           "Length": 80
         },
         {
@@ -552,8 +552,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2748,
-          "OffsetEnd": 2751,
+          "Offset": 2750,
+          "OffsetEnd": 2753,
           "Length": 3
         },
         {
@@ -565,8 +565,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2752,
-          "OffsetEnd": 2798,
+          "Offset": 2754,
+          "OffsetEnd": 2800,
           "Length": 46
         },
         {
@@ -578,8 +578,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2799,
-          "OffsetEnd": 2912,
+          "Offset": 2801,
+          "OffsetEnd": 2914,
           "Length": 113
         },
         {
@@ -591,8 +591,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2913,
-          "OffsetEnd": 2972,
+          "Offset": 2915,
+          "OffsetEnd": 2974,
           "Length": 59
         },
         {
@@ -604,8 +604,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 2973,
-          "OffsetEnd": 3041,
+          "Offset": 2975,
+          "OffsetEnd": 3043,
           "Length": 68
         },
         {
@@ -617,8 +617,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3042,
-          "OffsetEnd": 3139,
+          "Offset": 3044,
+          "OffsetEnd": 3141,
           "Length": 97
         },
         {
@@ -630,22 +630,22 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3140,
-          "OffsetEnd": 3229,
+          "Offset": 3142,
+          "OffsetEnd": 3231,
           "Length": 89
         },
         {
           "IsActive": false,
           "IsUnreachable": false,
           "LineNumber": 49,
-          "LiteralSourceCodeLine": "    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint8 _decimals, string _baseTicker, string _quoteTicker) public {",
+          "LiteralSourceCodeLine": "    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint256 _decimals, string _baseTicker, string _quoteTicker) public {",
           "ExecutionCount": 0,
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3230,
-          "OffsetEnd": 3388,
-          "Length": 158
+          "Offset": 3232,
+          "OffsetEnd": 3392,
+          "Length": 160
         },
         {
           "IsActive": true,
@@ -656,8 +656,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3389,
-          "OffsetEnd": 3428,
+          "Offset": 3393,
+          "OffsetEnd": 3432,
           "Length": 39
         },
         {
@@ -669,8 +669,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3429,
-          "OffsetEnd": 3479,
+          "Offset": 3433,
+          "OffsetEnd": 3483,
           "Length": 50
         },
         {
@@ -682,8 +682,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3480,
-          "OffsetEnd": 3518,
+          "Offset": 3484,
+          "OffsetEnd": 3522,
           "Length": 38
         },
         {
@@ -695,8 +695,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3519,
-          "OffsetEnd": 3605,
+          "Offset": 3523,
+          "OffsetEnd": 3609,
           "Length": 86
         },
         {
@@ -708,8 +708,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3606,
-          "OffsetEnd": 3638,
+          "Offset": 3610,
+          "OffsetEnd": 3642,
           "Length": 32
         },
         {
@@ -721,8 +721,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3639,
-          "OffsetEnd": 3671,
+          "Offset": 3643,
+          "OffsetEnd": 3675,
           "Length": 32
         },
         {
@@ -734,8 +734,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3672,
-          "OffsetEnd": 3698,
+          "Offset": 3676,
+          "OffsetEnd": 3702,
           "Length": 26
         },
         {
@@ -747,8 +747,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3699,
-          "OffsetEnd": 3729,
+          "Offset": 3703,
+          "OffsetEnd": 3733,
           "Length": 30
         },
         {
@@ -760,8 +760,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3730,
-          "OffsetEnd": 3762,
+          "Offset": 3734,
+          "OffsetEnd": 3766,
           "Length": 32
         },
         {
@@ -773,8 +773,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3763,
-          "OffsetEnd": 3807,
+          "Offset": 3767,
+          "OffsetEnd": 3811,
           "Length": 44
         },
         {
@@ -786,8 +786,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3808,
-          "OffsetEnd": 3813,
+          "Offset": 3812,
+          "OffsetEnd": 3817,
           "Length": 5
         },
         {
@@ -799,8 +799,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3814,
-          "OffsetEnd": 3818,
+          "Offset": 3818,
+          "OffsetEnd": 3822,
           "Length": 4
         },
         {
@@ -812,8 +812,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3819,
-          "OffsetEnd": 3901,
+          "Offset": 3823,
+          "OffsetEnd": 3905,
           "Length": 82
         },
         {
@@ -825,8 +825,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3902,
-          "OffsetEnd": 3954,
+          "Offset": 3906,
+          "OffsetEnd": 3958,
           "Length": 52
         },
         {
@@ -838,8 +838,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 3955,
-          "OffsetEnd": 4057,
+          "Offset": 3959,
+          "OffsetEnd": 4061,
           "Length": 102
         },
         {
@@ -851,8 +851,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4058,
-          "OffsetEnd": 4123,
+          "Offset": 4062,
+          "OffsetEnd": 4127,
           "Length": 65
         },
         {
@@ -864,8 +864,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4124,
-          "OffsetEnd": 4188,
+          "Offset": 4128,
+          "OffsetEnd": 4192,
           "Length": 64
         },
         {
@@ -878,8 +878,8 @@
           "BranchState": "both",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 4189,
-          "OffsetEnd": 4221,
+          "Offset": 4193,
+          "OffsetEnd": 4225,
           "Length": 32
         },
         {
@@ -892,8 +892,8 @@
           "BranchState": "both",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 4222,
-          "OffsetEnd": 4269,
+          "Offset": 4226,
+          "OffsetEnd": 4273,
           "Length": 47
         },
         {
@@ -906,8 +906,8 @@
           "BranchState": "both",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 4270,
-          "OffsetEnd": 4326,
+          "Offset": 4274,
+          "OffsetEnd": 4330,
           "Length": 56
         },
         {
@@ -919,8 +919,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4327,
-          "OffsetEnd": 4327,
+          "Offset": 4331,
+          "OffsetEnd": 4331,
           "Length": 0
         },
         {
@@ -932,8 +932,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4328,
-          "OffsetEnd": 4370,
+          "Offset": 4332,
+          "OffsetEnd": 4374,
           "Length": 42
         },
         {
@@ -945,8 +945,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4371,
-          "OffsetEnd": 4379,
+          "Offset": 4375,
+          "OffsetEnd": 4383,
           "Length": 8
         },
         {
@@ -958,8 +958,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4380,
-          "OffsetEnd": 4429,
+          "Offset": 4384,
+          "OffsetEnd": 4433,
           "Length": 49
         },
         {
@@ -971,8 +971,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4430,
-          "OffsetEnd": 4430,
+          "Offset": 4434,
+          "OffsetEnd": 4434,
           "Length": 0
         },
         {
@@ -984,8 +984,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4431,
-          "OffsetEnd": 4496,
+          "Offset": 4435,
+          "OffsetEnd": 4500,
           "Length": 65
         },
         {
@@ -997,8 +997,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4497,
-          "OffsetEnd": 4574,
+          "Offset": 4501,
+          "OffsetEnd": 4578,
           "Length": 77
         },
         {
@@ -1010,8 +1010,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4575,
-          "OffsetEnd": 4583,
+          "Offset": 4579,
+          "OffsetEnd": 4587,
           "Length": 8
         },
         {
@@ -1023,8 +1023,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4584,
-          "OffsetEnd": 4645,
+          "Offset": 4588,
+          "OffsetEnd": 4649,
           "Length": 61
         },
         {
@@ -1036,8 +1036,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4646,
-          "OffsetEnd": 4654,
+          "Offset": 4650,
+          "OffsetEnd": 4658,
           "Length": 8
         },
         {
@@ -1049,8 +1049,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4655,
-          "OffsetEnd": 4733,
+          "Offset": 4659,
+          "OffsetEnd": 4737,
           "Length": 78
         },
         {
@@ -1063,8 +1063,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 4734,
-          "OffsetEnd": 4780,
+          "Offset": 4738,
+          "OffsetEnd": 4784,
           "Length": 46
         },
         {
@@ -1076,8 +1076,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4781,
-          "OffsetEnd": 4832,
+          "Offset": 4785,
+          "OffsetEnd": 4836,
           "Length": 51
         },
         {
@@ -1089,8 +1089,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4833,
-          "OffsetEnd": 4842,
+          "Offset": 4837,
+          "OffsetEnd": 4846,
           "Length": 9
         },
         {
@@ -1102,8 +1102,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4843,
-          "OffsetEnd": 4851,
+          "Offset": 4847,
+          "OffsetEnd": 4855,
           "Length": 8
         },
         {
@@ -1115,8 +1115,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4852,
-          "OffsetEnd": 4857,
+          "Offset": 4856,
+          "OffsetEnd": 4861,
           "Length": 5
         },
         {
@@ -1128,8 +1128,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4858,
-          "OffsetEnd": 4862,
+          "Offset": 4862,
+          "OffsetEnd": 4866,
           "Length": 4
         },
         {
@@ -1141,8 +1141,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4863,
-          "OffsetEnd": 4931,
+          "Offset": 4867,
+          "OffsetEnd": 4935,
           "Length": 68
         },
         {
@@ -1154,8 +1154,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4932,
-          "OffsetEnd": 4989,
+          "Offset": 4936,
+          "OffsetEnd": 4993,
           "Length": 57
         },
         {
@@ -1167,8 +1167,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 4990,
-          "OffsetEnd": 5044,
+          "Offset": 4994,
+          "OffsetEnd": 5048,
           "Length": 54
         },
         {
@@ -1180,8 +1180,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5045,
-          "OffsetEnd": 5124,
+          "Offset": 5049,
+          "OffsetEnd": 5128,
           "Length": 79
         },
         {
@@ -1194,8 +1194,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 5125,
-          "OffsetEnd": 5209,
+          "Offset": 5129,
+          "OffsetEnd": 5213,
           "Length": 84
         },
         {
@@ -1207,8 +1207,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5210,
-          "OffsetEnd": 5231,
+          "Offset": 5214,
+          "OffsetEnd": 5235,
           "Length": 21
         },
         {
@@ -1220,8 +1220,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5232,
-          "OffsetEnd": 5246,
+          "Offset": 5236,
+          "OffsetEnd": 5250,
           "Length": 14
         },
         {
@@ -1233,8 +1233,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5247,
-          "OffsetEnd": 5296,
+          "Offset": 5251,
+          "OffsetEnd": 5300,
           "Length": 49
         },
         {
@@ -1246,8 +1246,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5297,
-          "OffsetEnd": 5306,
+          "Offset": 5301,
+          "OffsetEnd": 5310,
           "Length": 9
         },
         {
@@ -1259,8 +1259,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5307,
-          "OffsetEnd": 5312,
+          "Offset": 5311,
+          "OffsetEnd": 5316,
           "Length": 5
         },
         {
@@ -1272,8 +1272,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5313,
-          "OffsetEnd": 5313,
+          "Offset": 5317,
+          "OffsetEnd": 5317,
           "Length": 0
         },
         {
@@ -1285,8 +1285,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5314,
-          "OffsetEnd": 5390,
+          "Offset": 5318,
+          "OffsetEnd": 5394,
           "Length": 76
         },
         {
@@ -1298,8 +1298,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5391,
-          "OffsetEnd": 5450,
+          "Offset": 5395,
+          "OffsetEnd": 5454,
           "Length": 59
         },
         {
@@ -1311,8 +1311,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5451,
-          "OffsetEnd": 5507,
+          "Offset": 5455,
+          "OffsetEnd": 5511,
           "Length": 56
         },
         {
@@ -1324,8 +1324,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5508,
-          "OffsetEnd": 5587,
+          "Offset": 5512,
+          "OffsetEnd": 5591,
           "Length": 79
         },
         {
@@ -1338,8 +1338,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 5588,
-          "OffsetEnd": 5678,
+          "Offset": 5592,
+          "OffsetEnd": 5682,
           "Length": 90
         },
         {
@@ -1351,8 +1351,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5679,
-          "OffsetEnd": 5700,
+          "Offset": 5683,
+          "OffsetEnd": 5704,
           "Length": 21
         },
         {
@@ -1364,8 +1364,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5701,
-          "OffsetEnd": 5715,
+          "Offset": 5705,
+          "OffsetEnd": 5719,
           "Length": 14
         },
         {
@@ -1377,8 +1377,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5716,
-          "OffsetEnd": 5764,
+          "Offset": 5720,
+          "OffsetEnd": 5768,
           "Length": 48
         },
         {
@@ -1390,8 +1390,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5765,
-          "OffsetEnd": 5774,
+          "Offset": 5769,
+          "OffsetEnd": 5778,
           "Length": 9
         },
         {
@@ -1403,8 +1403,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5775,
-          "OffsetEnd": 5780,
+          "Offset": 5779,
+          "OffsetEnd": 5784,
           "Length": 5
         },
         {
@@ -1416,8 +1416,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5781,
-          "OffsetEnd": 5785,
+          "Offset": 5785,
+          "OffsetEnd": 5789,
           "Length": 4
         },
         {
@@ -1429,8 +1429,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5786,
-          "OffsetEnd": 5851,
+          "Offset": 5790,
+          "OffsetEnd": 5855,
           "Length": 65
         },
         {
@@ -1442,8 +1442,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5852,
-          "OffsetEnd": 5997,
+          "Offset": 5856,
+          "OffsetEnd": 6001,
           "Length": 145
         },
         {
@@ -1455,8 +1455,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 5998,
-          "OffsetEnd": 6171,
+          "Offset": 6002,
+          "OffsetEnd": 6175,
           "Length": 173
         },
         {
@@ -1468,8 +1468,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6172,
-          "OffsetEnd": 6225,
+          "Offset": 6176,
+          "OffsetEnd": 6229,
           "Length": 53
         },
         {
@@ -1481,8 +1481,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6226,
-          "OffsetEnd": 6317,
+          "Offset": 6230,
+          "OffsetEnd": 6321,
           "Length": 91
         },
         {
@@ -1495,8 +1495,8 @@
           "BranchState": "else",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 6318,
-          "OffsetEnd": 6406,
+          "Offset": 6322,
+          "OffsetEnd": 6410,
           "Length": 88
         },
         {
@@ -1508,8 +1508,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6407,
-          "OffsetEnd": 6453,
+          "Offset": 6411,
+          "OffsetEnd": 6457,
           "Length": 46
         },
         {
@@ -1521,8 +1521,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6454,
-          "OffsetEnd": 6468,
+          "Offset": 6458,
+          "OffsetEnd": 6472,
           "Length": 14
         },
         {
@@ -1534,8 +1534,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6469,
-          "OffsetEnd": 6500,
+          "Offset": 6473,
+          "OffsetEnd": 6504,
           "Length": 31
         },
         {
@@ -1547,8 +1547,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6501,
-          "OffsetEnd": 6510,
+          "Offset": 6505,
+          "OffsetEnd": 6514,
           "Length": 9
         },
         {
@@ -1560,8 +1560,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6511,
-          "OffsetEnd": 6516,
+          "Offset": 6515,
+          "OffsetEnd": 6520,
           "Length": 5
         },
         {
@@ -1573,8 +1573,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6517,
-          "OffsetEnd": 6517,
+          "Offset": 6521,
+          "OffsetEnd": 6521,
           "Length": 0
         },
         {
@@ -1586,8 +1586,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6518,
-          "OffsetEnd": 6609,
+          "Offset": 6522,
+          "OffsetEnd": 6613,
           "Length": 91
         },
         {
@@ -1599,8 +1599,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6610,
-          "OffsetEnd": 6658,
+          "Offset": 6614,
+          "OffsetEnd": 6662,
           "Length": 48
         },
         {
@@ -1612,8 +1612,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6659,
-          "OffsetEnd": 6725,
+          "Offset": 6663,
+          "OffsetEnd": 6729,
           "Length": 66
         },
         {
@@ -1625,8 +1625,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6726,
-          "OffsetEnd": 6817,
+          "Offset": 6730,
+          "OffsetEnd": 6821,
           "Length": 91
         },
         {
@@ -1638,8 +1638,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 6818,
-          "OffsetEnd": 7001,
+          "Offset": 6822,
+          "OffsetEnd": 7005,
           "Length": 183
         },
         {
@@ -1651,8 +1651,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7002,
-          "OffsetEnd": 7083,
+          "Offset": 7006,
+          "OffsetEnd": 7087,
           "Length": 81
         },
         {
@@ -1664,8 +1664,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7084,
-          "OffsetEnd": 7168,
+          "Offset": 7088,
+          "OffsetEnd": 7172,
           "Length": 84
         },
         {
@@ -1678,8 +1678,8 @@
           "BranchState": "both",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 7169,
-          "OffsetEnd": 7258,
+          "Offset": 7173,
+          "OffsetEnd": 7262,
           "Length": 89
         },
         {
@@ -1691,8 +1691,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7259,
-          "OffsetEnd": 7348,
+          "Offset": 7263,
+          "OffsetEnd": 7352,
           "Length": 89
         },
         {
@@ -1704,8 +1704,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7349,
-          "OffsetEnd": 7374,
+          "Offset": 7353,
+          "OffsetEnd": 7378,
           "Length": 25
         },
         {
@@ -1717,8 +1717,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7375,
-          "OffsetEnd": 7405,
+          "Offset": 7379,
+          "OffsetEnd": 7409,
           "Length": 30
         },
         {
@@ -1730,8 +1730,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7406,
-          "OffsetEnd": 7411,
+          "Offset": 7410,
+          "OffsetEnd": 7415,
           "Length": 5
         },
         {
@@ -1743,8 +1743,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7412,
-          "OffsetEnd": 7412,
+          "Offset": 7416,
+          "OffsetEnd": 7416,
           "Length": 0
         },
         {
@@ -1756,8 +1756,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7413,
-          "OffsetEnd": 7520,
+          "Offset": 7417,
+          "OffsetEnd": 7524,
           "Length": 107
         },
         {
@@ -1769,8 +1769,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7521,
-          "OffsetEnd": 7594,
+          "Offset": 7525,
+          "OffsetEnd": 7598,
           "Length": 73
         },
         {
@@ -1782,8 +1782,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7595,
-          "OffsetEnd": 7706,
+          "Offset": 7599,
+          "OffsetEnd": 7710,
           "Length": 111
         },
         {
@@ -1795,8 +1795,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7707,
-          "OffsetEnd": 7790,
+          "Offset": 7711,
+          "OffsetEnd": 7794,
           "Length": 83
         },
         {
@@ -1809,8 +1809,8 @@
           "BranchState": "if",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 7791,
-          "OffsetEnd": 7837,
+          "Offset": 7795,
+          "OffsetEnd": 7841,
           "Length": 46
         },
         {
@@ -1822,8 +1822,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7838,
-          "OffsetEnd": 7944,
+          "Offset": 7842,
+          "OffsetEnd": 7948,
           "Length": 106
         },
         {
@@ -1835,8 +1835,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 7945,
-          "OffsetEnd": 8021,
+          "Offset": 7949,
+          "OffsetEnd": 8025,
           "Length": 76
         },
         {
@@ -1848,8 +1848,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8022,
-          "OffsetEnd": 8027,
+          "Offset": 8026,
+          "OffsetEnd": 8031,
           "Length": 5
         },
         {
@@ -1861,8 +1861,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8028,
-          "OffsetEnd": 8028,
+          "Offset": 8032,
+          "OffsetEnd": 8032,
           "Length": 0
         },
         {
@@ -1874,8 +1874,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8029,
-          "OffsetEnd": 8120,
+          "Offset": 8033,
+          "OffsetEnd": 8124,
           "Length": 91
         },
         {
@@ -1887,8 +1887,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8121,
-          "OffsetEnd": 8208,
+          "Offset": 8125,
+          "OffsetEnd": 8212,
           "Length": 87
         },
         {
@@ -1900,8 +1900,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8209,
-          "OffsetEnd": 8278,
+          "Offset": 8213,
+          "OffsetEnd": 8282,
           "Length": 69
         },
         {
@@ -1913,8 +1913,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8279,
-          "OffsetEnd": 8334,
+          "Offset": 8283,
+          "OffsetEnd": 8338,
           "Length": 55
         },
         {
@@ -1926,8 +1926,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8335,
-          "OffsetEnd": 8393,
+          "Offset": 8339,
+          "OffsetEnd": 8397,
           "Length": 58
         },
         {
@@ -1939,8 +1939,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8394,
-          "OffsetEnd": 8442,
+          "Offset": 8398,
+          "OffsetEnd": 8446,
           "Length": 48
         },
         {
@@ -1952,8 +1952,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8443,
-          "OffsetEnd": 8448,
+          "Offset": 8447,
+          "OffsetEnd": 8452,
           "Length": 5
         },
         {
@@ -1965,8 +1965,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8449,
-          "OffsetEnd": 8449,
+          "Offset": 8453,
+          "OffsetEnd": 8453,
           "Length": 0
         },
         {
@@ -1978,8 +1978,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8450,
-          "OffsetEnd": 8503,
+          "Offset": 8454,
+          "OffsetEnd": 8507,
           "Length": 53
         },
         {
@@ -1991,8 +1991,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8504,
-          "OffsetEnd": 8583,
+          "Offset": 8508,
+          "OffsetEnd": 8587,
           "Length": 79
         },
         {
@@ -2004,8 +2004,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8584,
-          "OffsetEnd": 8644,
+          "Offset": 8588,
+          "OffsetEnd": 8648,
           "Length": 60
         },
         {
@@ -2017,8 +2017,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8645,
-          "OffsetEnd": 8718,
+          "Offset": 8649,
+          "OffsetEnd": 8722,
           "Length": 73
         },
         {
@@ -2031,8 +2031,8 @@
           "BranchState": "both",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 8719,
-          "OffsetEnd": 8765,
+          "Offset": 8723,
+          "OffsetEnd": 8769,
           "Length": 46
         },
         {
@@ -2044,8 +2044,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8766,
-          "OffsetEnd": 8826,
+          "Offset": 8770,
+          "OffsetEnd": 8830,
           "Length": 60
         },
         {
@@ -2057,8 +2057,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8827,
-          "OffsetEnd": 8832,
+          "Offset": 8831,
+          "OffsetEnd": 8836,
           "Length": 5
         },
         {
@@ -2070,8 +2070,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8833,
-          "OffsetEnd": 8833,
+          "Offset": 8837,
+          "OffsetEnd": 8837,
           "Length": 0
         },
         {
@@ -2083,8 +2083,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8834,
-          "OffsetEnd": 8896,
+          "Offset": 8838,
+          "OffsetEnd": 8900,
           "Length": 62
         },
         {
@@ -2096,8 +2096,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8897,
-          "OffsetEnd": 8959,
+          "Offset": 8901,
+          "OffsetEnd": 8963,
           "Length": 62
         },
         {
@@ -2109,8 +2109,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 8960,
-          "OffsetEnd": 9014,
+          "Offset": 8964,
+          "OffsetEnd": 9018,
           "Length": 54
         },
         {
@@ -2122,8 +2122,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9015,
-          "OffsetEnd": 9090,
+          "Offset": 9019,
+          "OffsetEnd": 9094,
           "Length": 75
         },
         {
@@ -2136,8 +2136,8 @@
           "BranchState": "if",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 9091,
-          "OffsetEnd": 9134,
+          "Offset": 9095,
+          "OffsetEnd": 9138,
           "Length": 43
         },
         {
@@ -2149,8 +2149,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9135,
-          "OffsetEnd": 9178,
+          "Offset": 9139,
+          "OffsetEnd": 9182,
           "Length": 43
         },
         {
@@ -2162,8 +2162,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9179,
-          "OffsetEnd": 9184,
+          "Offset": 9183,
+          "OffsetEnd": 9188,
           "Length": 5
         },
         {
@@ -2175,8 +2175,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9185,
-          "OffsetEnd": 9185,
+          "Offset": 9189,
+          "OffsetEnd": 9189,
           "Length": 0
         },
         {
@@ -2188,8 +2188,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9186,
-          "OffsetEnd": 9297,
+          "Offset": 9190,
+          "OffsetEnd": 9301,
           "Length": 111
         },
         {
@@ -2201,8 +2201,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9298,
-          "OffsetEnd": 9377,
+          "Offset": 9302,
+          "OffsetEnd": 9381,
           "Length": 79
         },
         {
@@ -2214,8 +2214,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9378,
-          "OffsetEnd": 9417,
+          "Offset": 9382,
+          "OffsetEnd": 9421,
           "Length": 39
         },
         {
@@ -2228,8 +2228,8 @@
           "BranchState": "else",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 9418,
-          "OffsetEnd": 9510,
+          "Offset": 9422,
+          "OffsetEnd": 9514,
           "Length": 92
         },
         {
@@ -2241,8 +2241,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9511,
-          "OffsetEnd": 9569,
+          "Offset": 9515,
+          "OffsetEnd": 9573,
           "Length": 58
         },
         {
@@ -2254,8 +2254,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9570,
-          "OffsetEnd": 9607,
+          "Offset": 9574,
+          "OffsetEnd": 9611,
           "Length": 37
         },
         {
@@ -2267,8 +2267,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9608,
-          "OffsetEnd": 9683,
+          "Offset": 9612,
+          "OffsetEnd": 9687,
           "Length": 75
         },
         {
@@ -2280,8 +2280,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9684,
-          "OffsetEnd": 9689,
+          "Offset": 9688,
+          "OffsetEnd": 9693,
           "Length": 5
         },
         {
@@ -2293,8 +2293,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9690,
-          "OffsetEnd": 9690,
+          "Offset": 9694,
+          "OffsetEnd": 9694,
           "Length": 0
         },
         {
@@ -2306,8 +2306,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9691,
-          "OffsetEnd": 9808,
+          "Offset": 9695,
+          "OffsetEnd": 9812,
           "Length": 117
         },
         {
@@ -2319,8 +2319,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9809,
-          "OffsetEnd": 9908,
+          "Offset": 9813,
+          "OffsetEnd": 9912,
           "Length": 99
         },
         {
@@ -2332,8 +2332,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 9909,
-          "OffsetEnd": 10049,
+          "Offset": 9913,
+          "OffsetEnd": 10053,
           "Length": 140
         },
         {
@@ -2345,8 +2345,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10050,
-          "OffsetEnd": 10089,
+          "Offset": 10054,
+          "OffsetEnd": 10093,
           "Length": 39
         },
         {
@@ -2358,8 +2358,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10090,
-          "OffsetEnd": 10117,
+          "Offset": 10094,
+          "OffsetEnd": 10121,
           "Length": 27
         },
         {
@@ -2371,8 +2371,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10118,
-          "OffsetEnd": 10151,
+          "Offset": 10122,
+          "OffsetEnd": 10155,
           "Length": 33
         },
         {
@@ -2384,8 +2384,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10152,
-          "OffsetEnd": 10160,
+          "Offset": 10156,
+          "OffsetEnd": 10164,
           "Length": 8
         },
         {
@@ -2397,8 +2397,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10161,
-          "OffsetEnd": 10229,
+          "Offset": 10165,
+          "OffsetEnd": 10233,
           "Length": 68
         },
         {
@@ -2411,8 +2411,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 10230,
-          "OffsetEnd": 10334,
+          "Offset": 10234,
+          "OffsetEnd": 10338,
           "Length": 104
         },
         {
@@ -2424,8 +2424,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10335,
-          "OffsetEnd": 10388,
+          "Offset": 10339,
+          "OffsetEnd": 10392,
           "Length": 53
         },
         {
@@ -2437,8 +2437,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10389,
-          "OffsetEnd": 10478,
+          "Offset": 10393,
+          "OffsetEnd": 10482,
           "Length": 89
         },
         {
@@ -2450,8 +2450,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10479,
-          "OffsetEnd": 10492,
+          "Offset": 10483,
+          "OffsetEnd": 10496,
           "Length": 13
         },
         {
@@ -2463,8 +2463,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10493,
-          "OffsetEnd": 10502,
+          "Offset": 10497,
+          "OffsetEnd": 10506,
           "Length": 9
         },
         {
@@ -2476,8 +2476,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10503,
-          "OffsetEnd": 10511,
+          "Offset": 10507,
+          "OffsetEnd": 10515,
           "Length": 8
         },
         {
@@ -2490,8 +2490,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 10512,
-          "OffsetEnd": 10650,
+          "Offset": 10516,
+          "OffsetEnd": 10654,
           "Length": 138
         },
         {
@@ -2503,8 +2503,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10651,
-          "OffsetEnd": 10735,
+          "Offset": 10655,
+          "OffsetEnd": 10739,
           "Length": 84
         },
         {
@@ -2516,8 +2516,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10736,
-          "OffsetEnd": 10750,
+          "Offset": 10740,
+          "OffsetEnd": 10754,
           "Length": 14
         },
         {
@@ -2529,8 +2529,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10751,
-          "OffsetEnd": 10803,
+          "Offset": 10755,
+          "OffsetEnd": 10807,
           "Length": 52
         },
         {
@@ -2542,8 +2542,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10804,
-          "OffsetEnd": 10813,
+          "Offset": 10808,
+          "OffsetEnd": 10817,
           "Length": 9
         },
         {
@@ -2555,8 +2555,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10814,
-          "OffsetEnd": 10822,
+          "Offset": 10818,
+          "OffsetEnd": 10826,
           "Length": 8
         },
         {
@@ -2568,8 +2568,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10823,
-          "OffsetEnd": 10865,
+          "Offset": 10827,
+          "OffsetEnd": 10869,
           "Length": 42
         },
         {
@@ -2581,8 +2581,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10866,
-          "OffsetEnd": 10895,
+          "Offset": 10870,
+          "OffsetEnd": 10899,
           "Length": 29
         },
         {
@@ -2594,8 +2594,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10896,
-          "OffsetEnd": 10901,
+          "Offset": 10900,
+          "OffsetEnd": 10905,
           "Length": 5
         },
         {
@@ -2607,8 +2607,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10902,
-          "OffsetEnd": 10902,
+          "Offset": 10906,
+          "OffsetEnd": 10906,
           "Length": 0
         },
         {
@@ -2620,8 +2620,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 10903,
-          "OffsetEnd": 11022,
+          "Offset": 10907,
+          "OffsetEnd": 11026,
           "Length": 119
         },
         {
@@ -2633,8 +2633,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11023,
-          "OffsetEnd": 11067,
+          "Offset": 11027,
+          "OffsetEnd": 11071,
           "Length": 44
         },
         {
@@ -2646,8 +2646,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11068,
-          "OffsetEnd": 11137,
+          "Offset": 11072,
+          "OffsetEnd": 11141,
           "Length": 69
         },
         {
@@ -2660,8 +2660,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 11138,
-          "OffsetEnd": 11292,
+          "Offset": 11142,
+          "OffsetEnd": 11296,
           "Length": 154
         },
         {
@@ -2673,8 +2673,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11293,
-          "OffsetEnd": 11362,
+          "Offset": 11297,
+          "OffsetEnd": 11366,
           "Length": 69
         },
         {
@@ -2686,8 +2686,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11363,
-          "OffsetEnd": 11376,
+          "Offset": 11367,
+          "OffsetEnd": 11380,
           "Length": 13
         },
         {
@@ -2699,8 +2699,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11377,
-          "OffsetEnd": 11386,
+          "Offset": 11381,
+          "OffsetEnd": 11390,
           "Length": 9
         },
         {
@@ -2712,8 +2712,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11387,
-          "OffsetEnd": 11392,
+          "Offset": 11391,
+          "OffsetEnd": 11396,
           "Length": 5
         },
         {
@@ -2725,8 +2725,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11393,
-          "OffsetEnd": 11393,
+          "Offset": 11397,
+          "OffsetEnd": 11397,
           "Length": 0
         },
         {
@@ -2738,8 +2738,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11394,
-          "OffsetEnd": 11480,
+          "Offset": 11398,
+          "OffsetEnd": 11484,
           "Length": 86
         },
         {
@@ -2751,8 +2751,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11481,
-          "OffsetEnd": 11533,
+          "Offset": 11485,
+          "OffsetEnd": 11537,
           "Length": 52
         },
         {
@@ -2764,8 +2764,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11534,
-          "OffsetEnd": 11606,
+          "Offset": 11538,
+          "OffsetEnd": 11610,
           "Length": 72
         },
         {
@@ -2777,8 +2777,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11607,
-          "OffsetEnd": 11676,
+          "Offset": 11611,
+          "OffsetEnd": 11680,
           "Length": 69
         },
         {
@@ -2791,8 +2791,8 @@
           "BranchState": "both",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 11677,
-          "OffsetEnd": 11759,
+          "Offset": 11681,
+          "OffsetEnd": 11763,
           "Length": 82
         },
         {
@@ -2805,8 +2805,8 @@
           "BranchState": "both",
           "BranchType": "require",
           "IsBranch": true,
-          "Offset": 11760,
-          "OffsetEnd": 11847,
+          "Offset": 11764,
+          "OffsetEnd": 11851,
           "Length": 87
         },
         {
@@ -2818,8 +2818,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11848,
-          "OffsetEnd": 11894,
+          "Offset": 11852,
+          "OffsetEnd": 11898,
           "Length": 46
         },
         {
@@ -2831,8 +2831,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11895,
-          "OffsetEnd": 11929,
+          "Offset": 11899,
+          "OffsetEnd": 11933,
           "Length": 34
         },
         {
@@ -2844,8 +2844,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11930,
-          "OffsetEnd": 11938,
+          "Offset": 11934,
+          "OffsetEnd": 11942,
           "Length": 8
         },
         {
@@ -2857,8 +2857,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 11939,
-          "OffsetEnd": 12007,
+          "Offset": 11943,
+          "OffsetEnd": 12011,
           "Length": 68
         },
         {
@@ -2871,8 +2871,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 12008,
-          "OffsetEnd": 12052,
+          "Offset": 12012,
+          "OffsetEnd": 12056,
           "Length": 44
         },
         {
@@ -2884,8 +2884,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12053,
-          "OffsetEnd": 12136,
+          "Offset": 12057,
+          "OffsetEnd": 12140,
           "Length": 83
         },
         {
@@ -2897,8 +2897,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12137,
-          "OffsetEnd": 12172,
+          "Offset": 12141,
+          "OffsetEnd": 12176,
           "Length": 35
         },
         {
@@ -2910,8 +2910,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12173,
-          "OffsetEnd": 12194,
+          "Offset": 12177,
+          "OffsetEnd": 12198,
           "Length": 21
         },
         {
@@ -2923,8 +2923,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12195,
-          "OffsetEnd": 12208,
+          "Offset": 12199,
+          "OffsetEnd": 12212,
           "Length": 13
         },
         {
@@ -2936,8 +2936,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12209,
-          "OffsetEnd": 12218,
+          "Offset": 12213,
+          "OffsetEnd": 12222,
           "Length": 9
         },
         {
@@ -2949,8 +2949,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12219,
-          "OffsetEnd": 12227,
+          "Offset": 12223,
+          "OffsetEnd": 12231,
           "Length": 8
         },
         {
@@ -2963,8 +2963,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 12228,
-          "OffsetEnd": 12256,
+          "Offset": 12232,
+          "OffsetEnd": 12260,
           "Length": 28
         },
         {
@@ -2976,8 +2976,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12257,
-          "OffsetEnd": 12306,
+          "Offset": 12261,
+          "OffsetEnd": 12310,
           "Length": 49
         },
         {
@@ -2989,8 +2989,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12307,
-          "OffsetEnd": 12316,
+          "Offset": 12311,
+          "OffsetEnd": 12320,
           "Length": 9
         },
         {
@@ -3002,8 +3002,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12317,
-          "OffsetEnd": 12325,
+          "Offset": 12321,
+          "OffsetEnd": 12329,
           "Length": 8
         },
         {
@@ -3015,8 +3015,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12326,
-          "OffsetEnd": 12334,
+          "Offset": 12330,
+          "OffsetEnd": 12338,
           "Length": 8
         },
         {
@@ -3028,8 +3028,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12335,
-          "OffsetEnd": 12410,
+          "Offset": 12339,
+          "OffsetEnd": 12414,
           "Length": 75
         },
         {
@@ -3041,8 +3041,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12411,
-          "OffsetEnd": 12486,
+          "Offset": 12415,
+          "OffsetEnd": 12490,
           "Length": 75
         },
         {
@@ -3054,8 +3054,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12487,
-          "OffsetEnd": 12492,
+          "Offset": 12491,
+          "OffsetEnd": 12496,
           "Length": 5
         },
         {
@@ -3067,8 +3067,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12493,
-          "OffsetEnd": 12497,
+          "Offset": 12497,
+          "OffsetEnd": 12501,
           "Length": 4
         },
         {
@@ -3080,8 +3080,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12498,
-          "OffsetEnd": 12653,
+          "Offset": 12502,
+          "OffsetEnd": 12657,
           "Length": 155
         },
         {
@@ -3093,8 +3093,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12654,
-          "OffsetEnd": 12706,
+          "Offset": 12658,
+          "OffsetEnd": 12710,
           "Length": 52
         },
         {
@@ -3106,8 +3106,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12707,
-          "OffsetEnd": 12807,
+          "Offset": 12711,
+          "OffsetEnd": 12811,
           "Length": 100
         },
         {
@@ -3119,8 +3119,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12808,
-          "OffsetEnd": 12882,
+          "Offset": 12812,
+          "OffsetEnd": 12886,
           "Length": 74
         },
         {
@@ -3132,8 +3132,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12883,
-          "OffsetEnd": 12956,
+          "Offset": 12887,
+          "OffsetEnd": 12960,
           "Length": 73
         },
         {
@@ -3145,8 +3145,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 12957,
-          "OffsetEnd": 13091,
+          "Offset": 12961,
+          "OffsetEnd": 13095,
           "Length": 134
         },
         {
@@ -3158,8 +3158,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13092,
-          "OffsetEnd": 13143,
+          "Offset": 13096,
+          "OffsetEnd": 13147,
           "Length": 51
         },
         {
@@ -3171,8 +3171,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13144,
-          "OffsetEnd": 13286,
+          "Offset": 13148,
+          "OffsetEnd": 13290,
           "Length": 142
         },
         {
@@ -3184,8 +3184,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13287,
-          "OffsetEnd": 13339,
+          "Offset": 13291,
+          "OffsetEnd": 13343,
           "Length": 52
         },
         {
@@ -3197,8 +3197,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13340,
-          "OffsetEnd": 13348,
+          "Offset": 13344,
+          "OffsetEnd": 13352,
           "Length": 8
         },
         {
@@ -3210,8 +3210,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13349,
-          "OffsetEnd": 13397,
+          "Offset": 13353,
+          "OffsetEnd": 13401,
           "Length": 48
         },
         {
@@ -3223,8 +3223,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13398,
-          "OffsetEnd": 13398,
+          "Offset": 13402,
+          "OffsetEnd": 13402,
           "Length": 0
         },
         {
@@ -3236,8 +3236,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13399,
-          "OffsetEnd": 13467,
+          "Offset": 13403,
+          "OffsetEnd": 13471,
           "Length": 68
         },
         {
@@ -3250,8 +3250,8 @@
           "BranchState": "both",
           "BranchType": "if_statement",
           "IsBranch": true,
-          "Offset": 13468,
-          "OffsetEnd": 13524,
+          "Offset": 13472,
+          "OffsetEnd": 13528,
           "Length": 56
         },
         {
@@ -3263,8 +3263,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13525,
-          "OffsetEnd": 13593,
+          "Offset": 13529,
+          "OffsetEnd": 13597,
           "Length": 68
         },
         {
@@ -3276,8 +3276,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13594,
-          "OffsetEnd": 13607,
+          "Offset": 13598,
+          "OffsetEnd": 13611,
           "Length": 13
         },
         {
@@ -3289,8 +3289,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13608,
-          "OffsetEnd": 13617,
+          "Offset": 13612,
+          "OffsetEnd": 13621,
           "Length": 9
         },
         {
@@ -3302,8 +3302,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13618,
-          "OffsetEnd": 13626,
+          "Offset": 13622,
+          "OffsetEnd": 13630,
           "Length": 8
         },
         {
@@ -3315,8 +3315,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13627,
-          "OffsetEnd": 13652,
+          "Offset": 13631,
+          "OffsetEnd": 13656,
           "Length": 25
         },
         {
@@ -3328,8 +3328,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13653,
-          "OffsetEnd": 13728,
+          "Offset": 13657,
+          "OffsetEnd": 13732,
           "Length": 75
         },
         {
@@ -3341,8 +3341,8 @@
           "IsCovered": true,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13729,
-          "OffsetEnd": 13804,
+          "Offset": 13733,
+          "OffsetEnd": 13808,
           "Length": 75
         },
         {
@@ -3354,8 +3354,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13805,
-          "OffsetEnd": 13805,
+          "Offset": 13809,
+          "OffsetEnd": 13809,
           "Length": 0
         },
         {
@@ -3367,8 +3367,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13806,
-          "OffsetEnd": 13811,
+          "Offset": 13810,
+          "OffsetEnd": 13815,
           "Length": 5
         },
         {
@@ -3380,8 +3380,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13812,
-          "OffsetEnd": 13812,
+          "Offset": 13816,
+          "OffsetEnd": 13816,
           "Length": 0
         },
         {
@@ -3393,8 +3393,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13813,
-          "OffsetEnd": 13837,
+          "Offset": 13817,
+          "OffsetEnd": 13841,
           "Length": 24
         },
         {
@@ -3406,8 +3406,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13838,
-          "OffsetEnd": 13860,
+          "Offset": 13842,
+          "OffsetEnd": 13864,
           "Length": 22
         },
         {
@@ -3419,8 +3419,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13861,
-          "OffsetEnd": 13887,
+          "Offset": 13865,
+          "OffsetEnd": 13891,
           "Length": 26
         },
         {
@@ -3432,8 +3432,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13888,
-          "OffsetEnd": 13910,
+          "Offset": 13892,
+          "OffsetEnd": 13914,
           "Length": 22
         },
         {
@@ -3445,8 +3445,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13911,
-          "OffsetEnd": 13916,
+          "Offset": 13915,
+          "OffsetEnd": 13920,
           "Length": 5
         },
         {
@@ -3458,8 +3458,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13917,
-          "OffsetEnd": 13921,
+          "Offset": 13921,
+          "OffsetEnd": 13925,
           "Length": 4
         },
         {
@@ -3471,8 +3471,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13922,
-          "OffsetEnd": 13942,
+          "Offset": 13926,
+          "OffsetEnd": 13946,
           "Length": 20
         },
         {
@@ -3484,8 +3484,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13943,
-          "OffsetEnd": 13961,
+          "Offset": 13947,
+          "OffsetEnd": 13965,
           "Length": 18
         },
         {
@@ -3497,8 +3497,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 13962,
-          "OffsetEnd": 14001,
+          "Offset": 13966,
+          "OffsetEnd": 14005,
           "Length": 39
         },
         {
@@ -3510,8 +3510,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 14002,
-          "OffsetEnd": 14027,
+          "Offset": 14006,
+          "OffsetEnd": 14031,
           "Length": 25
         },
         {
@@ -3523,8 +3523,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 14028,
-          "OffsetEnd": 14056,
+          "Offset": 14032,
+          "OffsetEnd": 14060,
           "Length": 28
         },
         {
@@ -3536,8 +3536,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 14057,
-          "OffsetEnd": 14062,
+          "Offset": 14061,
+          "OffsetEnd": 14066,
           "Length": 5
         },
         {
@@ -3549,8 +3549,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 14063,
-          "OffsetEnd": 14067,
+          "Offset": 14067,
+          "OffsetEnd": 14071,
           "Length": 4
         },
         {
@@ -3562,8 +3562,8 @@
           "IsCovered": false,
           "BranchState": "none",
           "IsBranch": false,
-          "Offset": 14068,
-          "OffsetEnd": 14069,
+          "Offset": 14072,
+          "OffsetEnd": 14073,
           "Length": 1
         }
       ],
@@ -3582,165 +3582,165 @@
     [
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateAddingPriceAgentSecurity",
-        "Passed": true,
-        "Duration": "00:00:00.5561450"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateAddingDuplicatePriceReportingAgent",
-        "Passed": true,
-        "Duration": "00:00:00.5594450"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateConnectingFundSecurity",
-        "Passed": true,
-        "Duration": "00:00:00.5590620"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateRemovingPriceAgentSecurity",
-        "Passed": true,
-        "Duration": "00:00:00.5594220"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
         "TestName": "ValidateRemovingAllValidReportingAgents_unitializedAgent",
         "Passed": true,
-        "Duration": "00:00:00.6659590"
+        "Duration": "00:00:00.6085120"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
         "TestName": "ValidateResetFund_notConnectedFund",
         "Passed": true,
-        "Duration": "00:00:00.0346810"
+        "Duration": "00:00:00.0367250"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateConnectingFund_decimalMismatch",
+        "TestName": "ValidateConnectingFundSecurity",
         "Passed": true,
-        "Duration": "00:00:00.4854360"
+        "Duration": "00:00:00.5035230"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateConnectingDuplicateFund",
+        "TestName": "ValidateAddingPriceAgentSecurity",
         "Passed": true,
-        "Duration": "00:00:00.5677340"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateConnectingNullFund",
-        "Passed": true,
-        "Duration": "00:00:00.5640490"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidatePriceRegistrationSecurity",
-        "Passed": true,
-        "Duration": "00:00:00.5570980"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidatehasFundEnded_notAFund",
-        "Passed": true,
-        "Duration": "00:00:00.4058070"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateAddingBeyondMaxPriceReportingAgents",
-        "Passed": true,
-        "Duration": "00:00:00.5585710"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateEndAndReturn",
-        "Passed": true,
-        "Duration": "00:00:00.1541990"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateDoublingEventPostConnection",
-        "Passed": true,
-        "Duration": "00:00:00.1319920"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateAddingReportingAgentInFreeSlot",
-        "Passed": true,
-        "Duration": "00:00:00.1201170"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateConnectingFundInEmptySlot",
-        "Passed": true,
-        "Duration": "00:00:00.1571370"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateDoublingEventUponConnection",
-        "Passed": true,
-        "Duration": "00:00:00.1548620"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateRemovingAllValidReportingAgents_deleteAdmin",
-        "Passed": true,
-        "Duration": "00:00:00.6786560"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidatePriceRegistrationUpdateEndFromInitNoFund",
-        "Passed": true,
-        "Duration": "00:00:00.1454730"
-      },
-      {
-        "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateConnectingFundNoMax",
-        "Passed": true,
-        "Duration": "00:00:00.1548550"
+        "Duration": "00:00:00.5012350"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
         "TestName": "ValidateRequestForInvalidFund",
         "Passed": true,
-        "Duration": "00:00:00.1295590"
+        "Duration": "00:00:00.1260920"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
         "TestName": "ValidatePriceRegistrationUpdateFromInitNoFund",
         "Passed": true,
-        "Duration": "00:00:00.1454880"
+        "Duration": "00:00:00.1363690"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateRemovingNewReportingAgent",
+        "TestName": "ValidateAddingDuplicatePriceReportingAgent",
         "Passed": true,
-        "Duration": "00:00:00.0307610"
+        "Duration": "00:00:00.4901140"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidateAddingNewPriceReportingAgent",
+        "TestName": "ValidateAddingBeyondMaxPriceReportingAgents",
         "Passed": true,
-        "Duration": "00:00:00.1448780"
+        "Duration": "00:00:00.4901440"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
-        "TestName": "ValidatePriceAveragingNoFund",
+        "TestName": "ValidateConnectingFundNoMax",
         "Passed": true,
-        "Duration": "00:00:00.1228550"
+        "Duration": "00:00:00.1267660"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateDoublingEventPostConnection",
+        "Passed": true,
+        "Duration": "00:00:00.0964620"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
         "TestName": "ValidateDeployment",
-        "Passed": false,
-        "Duration": "00:00:00.2740350"
+        "Passed": true,
+        "Duration": "00:00:00.1765970"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateRemovingAllValidReportingAgents_deleteAdmin",
+        "Passed": true,
+        "Duration": "00:00:00.6036480"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateConnectingFund_decimalMismatch",
+        "Passed": true,
+        "Duration": "00:00:00.4558590"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateRemovingPriceAgentSecurity",
+        "Passed": true,
+        "Duration": "00:00:00.5128050"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateAddingReportingAgentInFreeSlot",
+        "Passed": true,
+        "Duration": "00:00:00.0878630"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateConnectingDuplicateFund",
+        "Passed": true,
+        "Duration": "00:00:00.4634540"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidatehasFundEnded_notAFund",
+        "Passed": true,
+        "Duration": "00:00:00.3377890"
       },
       {
         "Namespace": "openSourcePriceIndex.PriceIndexTest",
         "TestName": "ValidateGetInvalidReportingAgent",
         "Passed": true,
-        "Duration": "00:00:00.0938040"
+        "Duration": "00:00:00.1115060"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateDoublingEventUponConnection",
+        "Passed": true,
+        "Duration": "00:00:00.1267540"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidatePriceRegistrationSecurity",
+        "Passed": true,
+        "Duration": "00:00:00.5162780"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidatePriceAveragingNoFund",
+        "Passed": true,
+        "Duration": "00:00:00.1084550"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateEndAndReturn",
+        "Passed": true,
+        "Duration": "00:00:00.1218950"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateConnectingFundInEmptySlot",
+        "Passed": true,
+        "Duration": "00:00:00.1371170"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidatePriceRegistrationUpdateEndFromInitNoFund",
+        "Passed": true,
+        "Duration": "00:00:00.1363780"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateConnectingNullFund",
+        "Passed": true,
+        "Duration": "00:00:00.5124510"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateRemovingNewReportingAgent",
+        "Passed": true,
+        "Duration": "00:00:00.1115450"
+      },
+      {
+        "Namespace": "openSourcePriceIndex.PriceIndexTest",
+        "TestName": "ValidateAddingNewPriceReportingAgent",
+        "Passed": true,
+        "Duration": "00:00:00.1356700"
       }
     ]
   ],

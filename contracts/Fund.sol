@@ -15,7 +15,7 @@ import "./PriceIndex.sol";
 contract Fund {
     PriceIndex public price_index;
     uint256 public strikePrice; //strike price of the fund
-    uint8 public decimals; //the precision of the fiat representation
+    uint256 public decimals; //the precision of the fiat representation
 
     constructor(address priceIndexAddress){
         price_index=PriceIndex(priceIndexAddress);

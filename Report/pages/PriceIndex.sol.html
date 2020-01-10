@@ -1042,7 +1042,7 @@
                     <span class="">   address[] internal registeredPriceAgents;</span><br />
                     <span class="">   uint256 public numberOfRegisteredPriceAgents;</span><br />
                     <span class="">   uint256 public maxNumberPriceAgents;</span><br />
-                    <span class="">   uint8 public decimals;</span><br />
+                    <span class="">   uint256 public decimals;</span><br />
                     <span class=""></span><br />
                     <span class="">   mapping (address =&gt; bool) internal isRegisteredPriceAgent;</span><br />
                     <span class="">   mapping (address =&gt; priceReport) public PriceAgentReports;</span><br />
@@ -1057,7 +1057,7 @@
                     <span class="">    /// @param initialPriceSource Where initialPrice is coming from.</span><br />
                     <span class="">    /// @param _maxNumberPriceAgents The max nnumber of price agents this price index will allow.</span><br />
                     <span class="">    /// @param _decimals The decimal precision used to represent the price of the asset. </span><br />
-                    <span class="">    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint8 _decimals, string _baseTicker, string _quoteTicker) public {</span><br />
+                    <span class="">    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint256 _decimals, string _baseTicker, string _quoteTicker) public {</span><br />
                     <span class="line-covered">       numberOfRegisteredPriceAgents=0;</span><br />
                     <span class="line-covered">       maxNumberPriceAgents=_maxNumberPriceAgents;</span><br />
                     <span class="line-covered">       registerPriceAgent(msg.sender);</span><br />
@@ -1295,7 +1295,7 @@
             <br />
             Used Solidity Compiler v0.4.25
             <br />
-            2019-08-20T21:48:30 (UTC)
+            2020-01-10T03:30:57 (UTC)
             <br />
             <a href="https://github.com/MeadowSuite">github.com/MeadowSuite</a>
         </center>

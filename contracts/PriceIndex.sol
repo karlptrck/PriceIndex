@@ -31,7 +31,7 @@ contract PriceIndex is Ownable {
    address[] internal registeredPriceAgents;
    uint256 public numberOfRegisteredPriceAgents;
    uint256 public maxNumberPriceAgents;
-   uint8 public decimals;
+   uint256 public decimals;
 
    mapping (address => bool) internal isRegisteredPriceAgent;
    mapping (address => priceReport) public PriceAgentReports;
@@ -46,7 +46,7 @@ contract PriceIndex is Ownable {
     /// @param initialPriceSource Where initialPrice is coming from.
     /// @param _maxNumberPriceAgents The max nnumber of price agents this price index will allow.
     /// @param _decimals The decimal precision used to represent the price of the asset. 
-    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint8 _decimals, string _baseTicker, string _quoteTicker) public {
+    constructor(uint256 initialPrice, string initialPriceSource, uint _maxNumberPriceAgents,uint256 _decimals, string _baseTicker, string _quoteTicker) public {
        numberOfRegisteredPriceAgents=0;
        maxNumberPriceAgents=_maxNumberPriceAgents;
        registerPriceAgent(msg.sender);
