@@ -1,0 +1,31 @@
+{
+  "name": "PriceIndex",
+  "version": "1.0.0",
+  "description": "![Novera](./NoveraLogo.png)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
+    "prettier:solidity": "./node_modules/.bin/prettier --write contracts/PriceIndex.sol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noveracapital/PriceIndex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noveracapital/PriceIndex/issues"
+  },
+  "homepage": "https://github.com/noveracapital/PriceIndex#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.36",
+    "solhint": "^2.3.0",
+    "solhint-plugin-prettier": "0.0.3"
+  }
+}

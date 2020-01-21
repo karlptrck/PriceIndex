@@ -2,3 +2,5 @@
 /bin
 /GeneratedContracts
 /obj
+.DS_Store
+node_modules
