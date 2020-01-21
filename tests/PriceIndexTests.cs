@@ -427,6 +427,85 @@ namespace openSourcePriceIndex
             Assert.AreEqual(true, hasFundEnded);
         }
 
+        [TestMethod]
+        public async Task ValidateDisconnectingFund()
+        {
+            Fund _FundContract;
+            Fund _FundContract2;
+            Fund _FundContract3;
+            Fund _FundContract4;
+
+            _FundContract = await Fund.New(_contract.ContractAddress,RpcClient);
+            _FundContract2 = await Fund.New(_contract.ContractAddress,RpcClient);
+            _FundContract3 =await Fund.New(_contract.ContractAddress,RpcClient);
+            _FundContract4 = await Fund.New(_contract.ContractAddress,RpcClient);
+
+
+            //connect fund 4 funds
+            var txParams = new TransactionParams { From = Accounts[0] }; // admin
+            await _contract.connectFund(_FundContract.ContractAddress).SendTransaction(txParams);
+            await _contract.connectFund(_FundContract2.ContractAddress).SendTransaction(txParams);
+            await _contract.connectFund(_FundContract3.ContractAddress).SendTransaction(txParams);
+            await _contract.connectFund(_FundContract4.ContractAddress).SendTransaction(txParams);
+
+            // validate number of connected funds
+            var numberOfConnectedFunds = await _contract.numberOfConnectedFunds().Call();
+            Assert.AreEqual(4, numberOfConnectedFunds);
+
+            // validate number of connected funds after disconnection
+            await _contract.disconnectFund(_FundContract2.ContractAddress).SendTransaction(txParams);
+            var numberOfConnectedFundsAfter = await _contract.numberOfConnectedFunds().Call();
+            Assert.AreEqual(3, numberOfConnectedFundsAfter);
+
+            // validate the array element swap, FundContract4 should be at the removed item at index 2
+            var newIndex = await _contract.connectedFundIndex(_FundContract4.ContractAddress).Call();
+            Assert.AreEqual(2, newIndex);
+            
+        }
+
+        [TestMethod]
+        public async Task ValidateDisconnectingFundOnLastIndex()
+        {
+            Fund _FundContract;
+            Fund _FundContract2;
+            Fund _FundContract3;
+            Fund _FundContract4;
+
+            _FundContract = await Fund.New(_contract.ContractAddress,RpcClient);
+            _FundContract2 = await Fund.New(_contract.ContractAddress,RpcClient);
+            _FundContract3 =await Fund.New(_contract.ContractAddress,RpcClient);
+            _FundContract4 = await Fund.New(_contract.ContractAddress,RpcClient);
+
+
+            //connect fund 4 funds
+            var txParams = new TransactionParams { From = Accounts[0] }; // admin
+            await _contract.connectFund(_FundContract.ContractAddress).SendTransaction(txParams);
+            await _contract.connectFund(_FundContract2.ContractAddress).SendTransaction(txParams);
+            await _contract.connectFund(_FundContract3.ContractAddress).SendTransaction(txParams);
+            await _contract.connectFund(_FundContract4.ContractAddress).SendTransaction(txParams);
+
+            // validate number of connected funds
+            var numberOfConnectedFunds = await _contract.numberOfConnectedFunds().Call();
+            Assert.AreEqual(4, numberOfConnectedFunds);
+
+            // validate the current index of fund to be deleted
+            var currentIndex = await _contract.connectedFundIndex(_FundContract4.ContractAddress).Call();
+            Assert.AreEqual(4, currentIndex);
+
+            // validate number of connected funds after disconnection
+            await _contract.disconnectFund(_FundContract4.ContractAddress).SendTransaction(txParams);
+            var numberOfConnectedFundsAfter = await _contract.numberOfConnectedFunds().Call();
+            Assert.AreEqual(3, numberOfConnectedFundsAfter);
+
+            // validate the last item was deleted
+            var newIndex = await _contract.connectedFundIndex(_FundContract4.ContractAddress).Call();
+            Assert.AreEqual(0, newIndex);
+
+            // validate the new last item
+            var newLastIndex = await _contract.connectedFundIndex(_FundContract3.ContractAddress).Call();
+            Assert.AreEqual(3, newLastIndex);
+            
+        }
         //fail cases
         [TestMethod]
         [ExpectedException(typeof(Meadow.CoverageReport.Debugging.ContractExecutionException))]
