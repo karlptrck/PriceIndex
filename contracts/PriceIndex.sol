@@ -21,7 +21,9 @@ contract PriceIndex is Ownable {
     string public baseTicker;
     string public quoteTicker;
     mapping(address => FundInfo) public funds;
+
     address[] internal connectedFundAddresses;
+    mapping(address => uint) public connectedFundIndex;
     mapping(address => bool) internal isConnectedFund;
     uint256 public numberOfConnectedFunds;
 
@@ -67,7 +69,7 @@ contract PriceIndex is Ownable {
             now,
             initialPriceSource
         );
-        
+
         masterPrice = initialPrice;
         numberOfConnectedFunds = 0;
         decimals = _decimals;
@@ -87,7 +89,8 @@ contract PriceIndex is Ownable {
 
         isConnectedFund[fundAddress] = true;
 
-        connectedFundAddresses.push(fundAddress);
+        uint fundIndex = connectedFundAddresses.push(fundAddress);
+        connectedFundIndex[fundAddress] = fundIndex;
 
         funds[fundAddress] = FundInfo(Fund(fundAddress), false, 0, 0);
         funds[fundAddress].strikePrice = funds[fundAddress].fund.strikePrice();
@@ -99,6 +102,35 @@ contract PriceIndex is Ownable {
             handleMaxConditionForFund(fundAddress);
         }
 
+    }
+
+    function disconnectFund(address fundAddress) public onlyOwner {
+        require(fundAddress != 0);
+        require(isConnectedFund[fundAddress]);
+
+        isConnectedFund[fundAddress] = false;
+
+        uint indexToDelete = connectedFundIndex[fundAddress];
+
+        if(indexToDelete < numberOfConnectedFunds){
+            address lastItem = connectedFundAddresses[connectedFundAddresses.length-1];
+
+            // move the last element to the deleted spot
+            connectedFundAddresses[indexToDelete] = lastItem;
+
+            // update the last element's key index
+            connectedFundIndex[lastItem] = indexToDelete;
+        } else {
+            // last item has to be deleted, reset the key index back to 0
+            connectedFundIndex[fundAddress] = 0;
+            indexToDelete--;
+        }
+
+        delete connectedFundAddresses[indexToDelete];
+
+        connectedFundAddresses.length--;
+
+        numberOfConnectedFunds = numberOfConnectedFunds.sub(1);
     }
 
     /// @notice Retrieves the address of one of the connected funds.
