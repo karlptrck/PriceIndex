@@ -104,32 +104,32 @@ contract PriceIndex is Ownable {
 
     }
 
+    /**
+        @dev Disconnects a fund based on their address
+        @notice Swaps and deletes the last item on the connectedFundAddresses array
+        @notice Indexes starts at 1 for connectedFundIndex mapping while connectedFundAddresses array starts at 0
+        @param fundAddress Address of fund that needs to be disconnected
+     */
     function disconnectFund(address fundAddress) public onlyOwner {
         require(fundAddress != 0);
         require(isConnectedFund[fundAddress]);
 
         isConnectedFund[fundAddress] = false;
 
-        uint indexToDelete = connectedFundIndex[fundAddress];
+        uint indexToDelete = connectedFundIndex[fundAddress].sub(1);
+        uint currentLastIndex = connectedFundAddresses.length.sub(1);
 
-        if(indexToDelete < numberOfConnectedFunds){
-            address lastItem = connectedFundAddresses[connectedFundAddresses.length-1];
-
-            // move the last element to the deleted spot
+        if(indexToDelete != currentLastIndex){
+            address lastItem = connectedFundAddresses[currentLastIndex];
             connectedFundAddresses[indexToDelete] = lastItem;
-
-            // update the last element's key index
-            connectedFundIndex[lastItem] = indexToDelete;
+            connectedFundIndex[lastItem] = indexToDelete.add(1);
         } else {
-            // last item has to be deleted, reset the key index back to 0
+            // last item has to be deleted, reset the key index back to 0 (default)
             connectedFundIndex[fundAddress] = 0;
-            indexToDelete--;
         }
 
-        delete connectedFundAddresses[indexToDelete];
-
+        delete connectedFundAddresses[currentLastIndex];
         connectedFundAddresses.length--;
-
         numberOfConnectedFunds = numberOfConnectedFunds.sub(1);
     }
 

@@ -659,31 +659,31 @@
                         <br />
                         <br />
                         <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                         <span class="good-execution-count">2&#xD7;</span>
                         <span class="good-execution-count">2&#xD7;</span>
                         <br />
                         <span class="good-execution-count">2&#xD7;</span>
                         <br />
                         <span class="good-execution-count">2&#xD7;</span>
+                        <span class="good-execution-count">2&#xD7;</span>
                         <br />
                         <span class="good-execution-count">2&#xD7;</span>
+                        <span class="good-execution-count">1&#xD7;</span>
+                        <span class="good-execution-count">1&#xD7;</span>
                         <span class="good-execution-count">1&#xD7;</span>
                         <br />
                         <br />
                         <span class="good-execution-count">1&#xD7;</span>
                         <br />
                         <br />
-                        <span class="good-execution-count">1&#xD7;</span>
-                        <br />
-                        <br />
-                        <span class="good-execution-count">1&#xD7;</span>
-                        <span class="good-execution-count">1&#xD7;</span>
-                        <br />
-                        <br />
                         <span class="good-execution-count">2&#xD7;</span>
-                        <br />
                         <span class="good-execution-count">2&#xD7;</span>
-                        <br />
                         <span class="good-execution-count">2&#xD7;</span>
                         <br />
                         <br />
@@ -1024,21 +1024,21 @@
                         <br />
                         <br />
                         <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                         <span class="branch-state-partial">E</span>
                         <span class="branch-state-partial">E</span>
+                        <br />
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
                         <span class="branch-state-covered">&#x2713;</span>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
                         <br />
                         <br />
                         <br />
@@ -1388,32 +1388,32 @@
                     <span class=""></span><br />
                     <span class="">    }</span><br />
                     <span class=""></span><br />
+                    <span class="">    /**</span><br />
+                    <span class="">        @dev Disconnects a fund based on their address</span><br />
+                    <span class="">        @notice Swaps and deletes the last item on the connectedFundAddresses array</span><br />
+                    <span class="">        @notice Indexes starts at 1 for connectedFundIndex mapping while connectedFundAddresses array starts at 0</span><br />
+                    <span class="">        @param fundAddress Address of fund that needs to be disconnected</span><br />
+                    <span class="">     */</span><br />
                     <span class="">    function disconnectFund(address fundAddress) public onlyOwner {</span><br />
                     <span class="line-covered">        require(fundAddress != 0);</span><br />
                     <span class="line-covered">        require(isConnectedFund[fundAddress]);</span><br />
                     <span class=""></span><br />
                     <span class="line-covered">        isConnectedFund[fundAddress] = false;</span><br />
                     <span class=""></span><br />
-                    <span class="line-covered">        uint indexToDelete = connectedFundIndex[fundAddress];</span><br />
+                    <span class="line-covered">        uint indexToDelete = connectedFundIndex[fundAddress].sub(1);</span><br />
+                    <span class="line-covered">        uint currentLastIndex = connectedFundAddresses.length.sub(1);</span><br />
                     <span class=""></span><br />
-                    <span class="line-covered">        if(indexToDelete &lt; numberOfConnectedFunds){</span><br />
-                    <span class="line-covered">            address lastItem = connectedFundAddresses[connectedFundAddresses.length-1];</span><br />
-                    <span class=""></span><br />
-                    <span class="">            // move the last element to the deleted spot</span><br />
+                    <span class="line-covered">        if(indexToDelete != currentLastIndex){</span><br />
+                    <span class="line-covered">            address lastItem = connectedFundAddresses[currentLastIndex];</span><br />
                     <span class="line-covered">            connectedFundAddresses[indexToDelete] = lastItem;</span><br />
-                    <span class=""></span><br />
-                    <span class="">            // update the last element&#x27;s key index</span><br />
-                    <span class="line-covered">            connectedFundIndex[lastItem] = indexToDelete;</span><br />
+                    <span class="line-covered">            connectedFundIndex[lastItem] = indexToDelete.add(1);</span><br />
                     <span class="">        } else {</span><br />
-                    <span class="">            // last item has to be deleted, reset the key index back to 0</span><br />
+                    <span class="">            // last item has to be deleted, reset the key index back to 0 (default)</span><br />
                     <span class="line-covered">            connectedFundIndex[fundAddress] = 0;</span><br />
-                    <span class="line-covered">            indexToDelete--;</span><br />
                     <span class="">        }</span><br />
                     <span class=""></span><br />
-                    <span class="line-covered">        delete connectedFundAddresses[indexToDelete];</span><br />
-                    <span class=""></span><br />
+                    <span class="line-covered">        delete connectedFundAddresses[currentLastIndex];</span><br />
                     <span class="line-covered">        connectedFundAddresses.length--;</span><br />
-                    <span class=""></span><br />
                     <span class="line-covered">        numberOfConnectedFunds = numberOfConnectedFunds.sub(1);</span><br />
                     <span class="">    }</span><br />
                     <span class=""></span><br />
@@ -1659,7 +1659,7 @@
             <br />
             Used Solidity Compiler v0.4.25
             <br />
-            2020-01-21T23:13:24 (UTC)
+            2020-01-22T19:04:12 (UTC)
             <br />
             <a href="https://github.com/MeadowSuite">github.com/MeadowSuite</a>
         </center>
